@@ -49,9 +49,6 @@ map <C-l> <C-W>l
 :set shiftwidth=2
 :set expandtab
 
-highlight nonascii guibg=Red ctermbg=1 term=standout
-au BufReadPost * syntax match nonascii "[^\u0000-\u007F]"
-
 highlight Pmenu ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000
 let g:go_fmt_command = "goimports"
 
@@ -101,3 +98,11 @@ set spell spelllang=en_us
 
 " Trailing spaces
 autocmd BufWritePre * %s/\s\+$//e
+
+" nonascii chars
+
+au BufReadPost * syntax match nonascii "[^\u0000-\u007F]" containedin=ALL
+highlight nonascii guibg=Red ctermbg=1 term=standout
+
+
+
