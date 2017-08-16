@@ -1,0 +1,25 @@
+# vim: filetype=zsh
+
+alias scavpn="cd $HOME/Documents/vpn && sudo openvpn $HOME/Documents/vpn/john@scalingo.ovpn"
+
+# API aliases
+alias sscalingo="SCALINGO_API_URL=https://api-staging.scalingo.com scalingo"
+alias dscalingo="SCALINGO_API_URL=http://localhost:3001 scalingo"
+
+# Directory configuration
+alias sg='cd $HOME/gocode/src/github.com/Scalingo'
+alias sc='cd $HOME/Documents/Scalingo'
+
+# Custom scripts
+alias check='$SCALINGO_HOME/tools-and-hacks/repo_checker/repo_checker.rb'
+alias gogo='$SCALINGO_HOME/tools-and-hacks/scalingo-upgrader/scalingo-upgrader'
+
+alias infra="tmuxinator containers"
+
+# Appsdeck repo and builder configuration
+export BUILDPACKS_PATH=/home/john/Documents/Scalingo/appsdeck-builder/buildpacks
+export BASE_REPO_PATH=/home/john/Documents/Scalingo/appsdeck-builder/docker
+
+# GOGO Configuration
+export SCALINGO_HOME=/home/john/Documents/Scalingo/
+export SCALINGO_REPOS_JSON=$SCALINGO_HOME/internal-documentation/

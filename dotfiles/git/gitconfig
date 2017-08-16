@@ -1,0 +1,5 @@
+[user]
+	email = john@scalingo.com
+	name = Jonathan Hurter
+[push]
+	default = simple

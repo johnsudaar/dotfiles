@@ -1,0 +1,8 @@
+MethodLength:
+  Max: 25
+NegatedIf:
+  Enabled: false
+FrozenStringLiteralComment:
+  Enabled: false
+Documentation:
+  Enabled: false
