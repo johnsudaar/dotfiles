@@ -15,4 +15,5 @@ alias screenoff='xset dpms force off'
 
 # dotfiles synchro
 
-alias dsync='$DOTFILES_HOME/dotfiles/installer.sh $HOME'
+alias dt='cd $DOTFILES_HOME'
+alias ds='$DOTFILES_HOME/dotfiles/installer.sh $HOME'
