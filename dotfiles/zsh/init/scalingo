@@ -3,7 +3,7 @@
 alias scavpn="cd $HOME/Documents/vpn && sudo openvpn $HOME/Documents/vpn/john@scalingo.ovpn"
 
 # API aliases
-alias sscalingo="SCALINGO_API_URL=https://api-staging.scalingo.com scalingo"
+alias sscalingo="SSH_HOST=staging.scalingo.com:22 SCALINGO_API_URL=https://api-staging.scalingo.com scalingo"
 alias dscalingo="SCALINGO_API_URL=http://localhost:3001 scalingo"
 
 # Directory configuration

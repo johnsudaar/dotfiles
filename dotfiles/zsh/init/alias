@@ -13,3 +13,6 @@ alias rmstopped='docker ps -a -q --filter="status=exited" | xargs docker rm'
 alias curls="curl-unix-socket"
 alias screenoff='xset dpms force off'
 
+# dotfiles synchro
+
+alias dsync='$DOTFILES_HOME/dotfiles/installer.sh $HOME'
