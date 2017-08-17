@@ -21,6 +21,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'Valloric/ListToggle'
 Plug 'scrooloose/nerdcommenter'
+Plug 'iCyMind/NeoSolarized'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
