@@ -14,7 +14,7 @@ load $BASEDIR/../libraries
 OLD_IFS=$IFS
 IFS=$'\n'
 
-log "Starting dotfiles synchronisation"
+info "Starting dotfiles synchronisation"
 
 for line in $( sed -e '/^$/d' -e '/^\#.*$/d' $BASEDIR/map) ; do
   src=$(echo $line | cut -d' ' -f1)

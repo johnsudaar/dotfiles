@@ -86,7 +86,11 @@ $DOTFILES_HOME/packages/installer.sh
 
 failFast $? "Fail to install packages"
 
-info "Launching customs script"
+info "Launching custom scripts"
+
+$DOTFILES_HOME/custom/installer.sh
+
+failFast $? "Fail to run custom scripts"
 
 info "Launching dotfiles script"
 
