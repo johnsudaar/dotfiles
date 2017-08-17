@@ -5,7 +5,7 @@ version=1.15.0
 if [ -f /usr/local/bin/docker-compose ] ; then
   docker-compose --version | grep "$version" > /dev/null
   if [ $? -eq 0 ]; then
-    info "Docker-compose already installed. Skipping..."
+    log "Docker-compose already installed. Skipping..."
     exit 0
   fi
 fi
