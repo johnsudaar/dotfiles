@@ -15,6 +15,7 @@ pre_install_hook_path="$PROJECT_ROOT/packages/$manager/pre_install_hook.sh"
 if [ -f $pre_install_hook_path ] ; then
   info "Running pre package hooks"
   sudo $pre_install_hook_path $PROJECT_ROOT
+  failFast $? "Hook failed, stopping package installation"
 fi
 
 package_list=""
@@ -37,3 +38,5 @@ if [ "$manager" == "apt" ] ; then
 else
   pacman -S $package_list
 fi
+
+success "Packages installed"

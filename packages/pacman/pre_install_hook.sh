@@ -18,7 +18,7 @@ if [ $cpStat -eq 1 ] ; then
   info "Pacman configuration has changed. Running hooks"
   for file in $(ls $PROJECT_ROOT/packages/pacman/pre_install_hooks ) ; do
     log "Running $file"
-    bash $PROJECT_ROOT/packages/pacman/pre_install_hooks/$file
+    source $PROJECT_ROOT/packages/pacman/pre_install_hooks/$file
   done
   success "Done!"
 fi

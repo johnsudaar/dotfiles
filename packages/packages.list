@@ -9,7 +9,17 @@ gitg,gitg
 ,atom
 sublime-text,sublime-text
 neovim,neovim
-gitg,gitg
+
+# Terminal utils
 zsh,zsh
 tmux,tmux
+
+# Misc
 firefox,firefox
+
+# Docker and VMS
+docker-ce,docker
+
+# Utilities
+
+

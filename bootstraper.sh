@@ -82,6 +82,10 @@ success "Bootstraping complete"
 
 info "Launching package script"
 
+$DOTFILES_HOME/packages/installer.sh
+
+failFast $? "Fail to install packages"
+
 info "Launching customs script"
 
 info "Launching dotfiles script"
