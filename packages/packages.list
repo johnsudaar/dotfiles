@@ -1,0 +1,15 @@
+# Package list the format is the following
+# APT_PACKAGE, PACMAN PACKAGE
+
+# Source code management
+git,git
+gitg,gitg
+
+# Text editor
+,atom
+sublime-text,sublime-text
+neovim,neovim
+gitg,gitg
+zsh,zsh
+tmux,tmux
+firefox,firefox
