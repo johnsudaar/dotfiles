@@ -13,6 +13,7 @@ alias sc='cd $HOME/Documents/Scalingo'
 # Custom scripts
 alias check='$SCALINGO_HOME/tools-and-hacks/repo_checker/repo_checker.rb'
 alias gogo='$SCALINGO_HOME/tools-and-hacks/scalingo-upgrader/scalingo-upgrader'
+alias dcurl='$SCALINGO_HOME/tools-and-hacks/dcurl/dcurl'
 
 alias infra="tmuxinator containers"
 

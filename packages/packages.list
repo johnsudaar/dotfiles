@@ -20,8 +20,10 @@ firefox,firefox
 # Docker and VMS
 docker-ce,docker
 
+# Networking
+openvpn,openvpn
+
 # Utilities
-
 guake,guake
-
+htop,htop
 
