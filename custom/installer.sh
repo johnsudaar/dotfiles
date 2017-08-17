@@ -5,8 +5,11 @@ export PROJECT_ROOT="$(dirname "$0")/../"
 source $PROJECT_ROOT/libraries/bootstrap.sh
 load $PROJECT_ROOT/libraries
 
-info "Switching to root"
-[ `whoami` = root ] || exec sudo bash $0
+if [ ! `whoami` = root ] ; then
+  info "Switching to root"
+  exec sudo bash $0
+fi
+
 success "Continuing as root"
 
 info "Starting custom synchronisation"
