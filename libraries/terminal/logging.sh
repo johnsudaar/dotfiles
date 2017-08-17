@@ -12,6 +12,10 @@ function ident() {
   echo -n "$MESSAGE "
 }
 
+function identOutput() {
+  sed -e 's/^/\t /'
+}
+
 function log() {
   ident
   echo $*

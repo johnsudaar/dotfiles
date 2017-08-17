@@ -22,4 +22,6 @@ docker-ce,docker
 
 # Utilities
 
+guake,guake
+
 

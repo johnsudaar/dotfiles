@@ -5,8 +5,8 @@ export PROJECT_ROOT=$1
 source $PROJECT_ROOT/libraries/bootstrap.sh
 load $PROJECT_ROOT/libraries
 
-apt-get update
-apt-get install apt-transport-https ca-certificates curl software-properties-common
+apt-get update | identOutput
+apt-get install -y apt-transport-https ca-certificates curl software-properties-common | identOutput
 
 failFast $? "Unable to install needed apt tools"
 

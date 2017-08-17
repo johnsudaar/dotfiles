@@ -33,10 +33,10 @@ for line in $( sed -e '/^$/d' -e '/^\#.*$/d' $PROJECT_ROOT/packages/packages.lis
 done
 
 if [ "$manager" == "apt" ] ; then
-  sudo apt-get update
-  sudo apt-get install $package_list
+  sudo apt-get update | identOutput
+  sudo apt-get install -y $package_list | identOutput
 else
-  pacman -S $package_list
+  pacman -S $package_list | identOutput
 fi
 
 success "Packages installed"
