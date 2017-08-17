@@ -104,5 +104,6 @@ autocmd BufWritePre * %s/\s\+$//e
 au BufReadPost * syntax match nonascii "[^\u0000-\u007F]" containedin=ALL
 highlight nonascii guibg=Red ctermbg=1 term=standout
 
+" Mouse mode
 
-
+set mouse=a
