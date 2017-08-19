@@ -82,7 +82,7 @@ success "Bootstraping complete"
 
 info "Launching package script"
 
-$DOTFILES_HOME/packages/installer.sh
+$DOTFILES_HOME/packages/installer.sh $PACKAGE_MANAGER
 
 failFast $? "Fail to install packages"
 

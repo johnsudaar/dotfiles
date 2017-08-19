@@ -1,5 +1,7 @@
 #!/bin/bash
 
+eval "$(~/.rbenv/bin/rbenv init -)"
+
 rubocop version 2>&1 > /dev/null
 
 if [ $? -eq 0 ] ; then

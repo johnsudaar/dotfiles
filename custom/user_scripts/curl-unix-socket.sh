@@ -5,7 +5,7 @@ if [ -f $HOME/gocode/bin/curl-unix-socket ] ; then
   exit 0
 fi
 
-go get github.com/Soulou/curl-unix-socket
+/usr/local/go/bin/go get github.com/Soulou/curl-unix-socket
 failFast $? "Fail to install curl-unix-socket"
 
 success "Curl unix socket installed"

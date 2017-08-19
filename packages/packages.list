@@ -4,10 +4,11 @@
 # Source code management
 git,git
 gitg,gitg
+,hub
 
 # Text editor
 ,atom
-sublime-text,sublime-text
+#sublime-text,sublime-text
 neovim,neovim
 
 # Terminal utils
@@ -16,6 +17,7 @@ tmux,tmux
 
 # Misc
 firefox,firefox
+,make
 
 # Docker and VMS
 docker-ce,docker

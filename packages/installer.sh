@@ -1,5 +1,7 @@
 #!/bin/bash
 
+MANAGER=$1
+echo $MANAGER
 export PROJECT_ROOT="$(dirname "$0")/../"
 
 source $PROJECT_ROOT/libraries/bootstrap.sh
@@ -24,7 +26,7 @@ for line in $( sed -e '/^$/d' -e '/^\#.*$/d' $PROJECT_ROOT/packages/packages.lis
   if [ "$manager" == "apt" ] ; then
     package=$(echo $line | cut -d',' -f1)
   else
-    package=$(echo $line | cut -d',' -f1)
+    package=$(echo $line | cut -d',' -f2)
   fi
 
   if [ ! -z $package ] ; then
@@ -36,7 +38,7 @@ if [ "$manager" == "apt" ] ; then
   sudo apt-get update | identOutput
   sudo apt-get install -y $package_list | identOutput
 else
-  pacman -S $package_list | identOutput
+  yes | sudo pacman -Sy $package_list | identOutput
 fi
 
 success "Packages installed"

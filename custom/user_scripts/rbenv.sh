@@ -17,6 +17,9 @@ else
 fi
 
 
+export PATH=$HOME/.rbenv/bin:$PATH
+eval "$(rbenv init -)"
+
 ruby --version | grep "$version" > /dev/null
 
 if [ $? -eq 0 ] ; then
