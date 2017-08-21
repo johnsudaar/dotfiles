@@ -8,8 +8,9 @@ gitg,gitg
 
 # Text editor
 ,atom
-#sublime-text,sublime-text
+sublime-text,sublime-text
 neovim,neovim
+,python-neovim
 
 # Terminal utils
 zsh,zsh
@@ -18,6 +19,8 @@ tmux,tmux
 # Misc
 firefox,firefox
 ,make
+,python
+jq,jq
 
 # Docker and VMS
 docker-ce,docker
