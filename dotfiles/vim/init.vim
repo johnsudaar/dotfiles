@@ -88,6 +88,8 @@ autocmd! BufWritePost * Neomake
 
 " Deoplete configuration
 let g:deoplete#enable_at_startup = 1
+"    Complete with tab
+inoremap <expr><tab> pumvisible() ? "\<c-n>" : "\<tab>"
 
 " AutoIndent with <leader> m
 nmap <leader>m mZgg=G'Z
@@ -111,3 +113,4 @@ set mouse=a
 
 " Highlight cursor line
 set cursorline
+

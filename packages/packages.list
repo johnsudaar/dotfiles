@@ -22,6 +22,7 @@ firefox,firefox
 ,python
 jq,jq
 ack,ack
+xclip,xclip
 
 # Docker and VMS
 docker-ce,docker
