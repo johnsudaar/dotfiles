@@ -19,3 +19,7 @@ alias dt='cd $DOTFILES_HOME'
 alias dcu='$DOTFILES_HOME/custom/installer.sh'
 alias dpa='$DOTFILES_HOME/packages/installer.sh pacman'
 alias ddo='$DOTFILES_HOME/dotfiles/installer.sh $HOME'
+
+# Docker command replacement
+
+alias etcdctl='docker run -e ETCDCTL_ENDPOINT=172.17.0.1:2379 quay.io/coreos/etcd:v3.1.7 etcdctl'
