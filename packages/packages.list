@@ -21,6 +21,7 @@ firefox,firefox
 ,make
 ,python
 jq,jq
+ack,ack
 
 # Docker and VMS
 docker-ce,docker
