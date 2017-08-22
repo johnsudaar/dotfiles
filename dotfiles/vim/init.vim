@@ -28,13 +28,10 @@ Plug 'fishbullet/deoplete-ruby'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 call plug#end()
 
-
-
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 :let mapleader = ","
-
 
 syntax enable
 
@@ -43,7 +40,6 @@ map <C-j> <C-W>j
 map <C-k> <C-W>k
 map <C-h> <C-W>h
 map <C-l> <C-W>l
-
 
 :set number
 
@@ -82,7 +78,8 @@ endfunction
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 let g:NERDDefaultAlign = 'left'
 let g:NERDTreeShowHidden = 1
-
+let NERDTreeMapOpenVSplit = "v"
+let NERDTreeMapOpenSplit = "h"
 
 " Neomake Configuration
 autocmd! BufWritePost * Neomake
@@ -109,3 +106,6 @@ highlight nonascii guibg=Red ctermbg=1 term=standout
 " Mouse mode
 
 set mouse=a
+
+" Highlight cursor line
+set cursorline
