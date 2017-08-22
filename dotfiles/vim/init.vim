@@ -26,6 +26,8 @@ Plug 'iCyMind/NeoSolarized'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+
+Plug 'jiangmiao/auto-pairs'
 call plug#end()
 
 autocmd StdinReadPre * let s:std_in=1
