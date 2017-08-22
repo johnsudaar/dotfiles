@@ -25,6 +25,7 @@ Plug 'iCyMind/NeoSolarized'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
+Plug 'zchee/deoplete-go', { 'do': 'make'}
 call plug#end()
 
 
