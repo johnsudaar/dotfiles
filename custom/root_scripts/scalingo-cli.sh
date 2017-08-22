@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -f /usr/local/bin/scalingo ] ; then
-  scalingo version | grep "Please update"
+  scalingo --version | grep "Please update"
 
   if [ $? -ne 0 ] ; then
     log "Scalingo cli already installed. Skipping..."
