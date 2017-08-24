@@ -10,6 +10,6 @@ export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.ndenv/bin:$PATH"
 
 
-export GITHUB_TOKEN=$(cat ~/.config/github_token)
+export GITHUB_TOKEN=$(grep auth_token ~/.config/hub | cut -d':' -f2 | tr -d ' ')
 
 export DOTFILES_HOME="$HOME/Documents/perso/dotfiles/"
