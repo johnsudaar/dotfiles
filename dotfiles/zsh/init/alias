@@ -6,6 +6,7 @@ alias dnuke='docker rm -f $(docker ps -aq)'
 alias master="git checkout master"
 alias co='docker-compose'
 alias dc='docker'
+alias dcr='docker run -it'
 alias :q='exit'
 alias be='bundle exec'
 alias rmdangling="docker images -f \"dangling=true\" -q | xargs docker rmi"
