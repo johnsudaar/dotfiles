@@ -21,7 +21,7 @@ alias dpa='$DOTFILES_HOME/packages/installer.sh pacman'
 alias ddo='$DOTFILES_HOME/dotfiles/installer.sh $HOME'
 
 # Grc
-alias gt='grc go test'
+alias gt='grc -s -e go test'
 
 # Docker command replacement
 ## Etcd
