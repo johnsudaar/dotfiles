@@ -15,11 +15,13 @@ alias curls="curl-unix-socket"
 alias screenoff='xset dpms force off'
 
 # dotfiles synchro
-
 alias dt='cd $DOTFILES_HOME'
 alias dcu='$DOTFILES_HOME/custom/installer.sh'
 alias dpa='$DOTFILES_HOME/packages/installer.sh pacman'
 alias ddo='$DOTFILES_HOME/dotfiles/installer.sh $HOME'
+
+# Grc
+alias gt='grc go test'
 
 # Docker command replacement
 ## Etcd

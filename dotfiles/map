@@ -3,23 +3,21 @@
 # The mappings are in the form:
 # PATH_FROM_THE_DOTFILE_DIRECTORY PATH_FROM_THE_HOME_DIRECTORY
 
-# ZSH
-
+# ZSH
 zsh/init .zsh/init
 zsh/zshrc .zshrc
 
 # VIM
-
 vim/init.vim .config/nvim/init.vim
 
 # TMUX
-
 tmux/tmux.conf .tmux.conf
 
 # Git
-
 git/gitconfig .gitconfig
 
 # Ruby
-
 ruby/rubocop.yml .rubocop.yml
+
+# Grc
+grc .grc
