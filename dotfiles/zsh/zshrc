@@ -95,4 +95,6 @@ export fpath=(~/.zsh/completions $fpath)
 
 autoload -Uz compinit && compinit
 
+source ~/.zsh/init/autocomplete
+
 source ~/.zsh/init/startup

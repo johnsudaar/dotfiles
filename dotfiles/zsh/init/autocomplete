@@ -1,0 +1,3 @@
+# vim: filetype=zsh
+
+source ~/.zsh/completion/scalingo_complete.zsh
