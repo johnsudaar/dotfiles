@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [ -f $HOME/.zsh/completion/scalingo_complete.zsqh ] ; then
+if [ -f $HOME/.zsh/completion/scalingo_complete.zsh ] ; then
   log "Scalingo cli completion installed. Skipping..."
   exit 0
 fi
