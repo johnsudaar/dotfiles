@@ -4,6 +4,12 @@ colour=green
 regexp=[+]{1,3} .*
 colour=red
 -
+regexp=.*missing call\(s\).*
+colour=red
+-
+regexp=.*Unexpected call.*
+colour=red
+-
 regexp==== RUN .*
 colour=blue
 -
@@ -43,9 +49,8 @@ colour=red
 regexp=panic\:\s.*
 colour=red
 -
-regexp=.*missing call\(s\).*
+regexp=^\s+Got.*
 colour=red
 -
-regexp=.*Unexpected call.*
-colour=red
--
+regexp=^\s+Want.*
+colour=green
