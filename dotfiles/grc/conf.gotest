@@ -43,3 +43,9 @@ colour=red
 regexp=panic\:\s.*
 colour=red
 -
+regexp=.*missing call\(s\).*
+colour=red
+-
+regexp=.*Unexpected call.*
+colour=red
+-
