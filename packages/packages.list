@@ -33,5 +33,5 @@ openvpn,openvpn
 # Utilities
 guake,guake
 htop,htop
-src,grc
+grc,grc
 httpie,httpie
