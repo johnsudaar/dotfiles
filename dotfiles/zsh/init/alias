@@ -22,6 +22,7 @@ alias ddo='$DOTFILES_HOME/dotfiles/installer.sh $HOME'
 
 # Grc
 alias gt='grc -s -e go test'
+alias mt='grc -s -e make test -B'
 
 # Docker command replacement
 ## Etcd
