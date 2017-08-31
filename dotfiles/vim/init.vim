@@ -114,3 +114,7 @@ set mouse=a
 " Highlight cursor line
 set cursorline
 
+" Jump to declarations
+nnoremap <C-g>d :GoDecls<CR>
+" Jump to declarations in current directory
+nnoremap <C-g>D :GoDeclsDir<CR>
