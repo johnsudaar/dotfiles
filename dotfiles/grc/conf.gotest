@@ -10,6 +10,9 @@ colour=red
 regexp=.*Unexpected call.*
 colour=red
 -
+regexp=^\s+Error\:.*
+colour=red
+-
 regexp==== RUN .*
 colour=blue
 -
@@ -54,3 +57,4 @@ colour=red
 -
 regexp=^\s+Want.*
 colour=green
+
