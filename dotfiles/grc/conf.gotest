@@ -46,7 +46,13 @@ colour=red
 regexp=.*\.go\:\d+\:\d+.*
 colour=red
 -
-regexp=^\s+(have|want).*
+regexp=^\s+have.*
+colour=red
+-
+regexp=^\s+want.*
+colour=green
+-
+regexp=^\s+received.*
 colour=red
 -
 regexp=panic\:\s.*
@@ -57,4 +63,6 @@ colour=red
 -
 regexp=^\s+Want.*
 colour=green
-
+-
+regexp=.*error\:.*
+colour=red
