@@ -11,6 +11,7 @@ alias :q='exit'
 alias be='bundle exec'
 alias rmdangling="docker images -f \"dangling=true\" -q | xargs docker rmi"
 alias rmstopped='docker ps -a -q --filter="status=exited" | xargs docker rm'
+alias rmcreated='docker ps -a -q --filter="status=created" | xargs docker rm'
 alias curls="curl-unix-socket"
 alias screenoff='xset dpms force off'
 
@@ -28,6 +29,8 @@ function grepkill() {
 # Grc
 alias gt='grc -s -e go test'
 alias mt='grc -s -e make test -B'
+alias dgt='grc -s -e docker-compose run test go test'
+alias dmt='grc -s -e docker-compose run test make test -B'
 
 # Docker command replacement
 ## Etcd
@@ -36,4 +39,8 @@ alias etcdctl='docker run -e ETCDCTL_ENDPOINT=172.17.0.1:2379 quay.io/coreos/etc
 ## Nsq
 alias to_nsq='docker run -it nsqio/nsq to_nsq'
 
+## MySQL
+alias mysql='docker run -it mysql mysql'
 
+## Influx
+alias influx='docker run -it influxdb:1.2 influx'
