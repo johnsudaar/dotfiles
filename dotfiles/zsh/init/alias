@@ -34,13 +34,16 @@ alias dmt='grc -s -e docker-compose run test make test -B'
 
 # Docker command replacement
 ## Etcd
-alias etcdctl='docker run -e ETCDCTL_ENDPOINT=172.17.0.1:2379 quay.io/coreos/etcd:v3.1.7 etcdctl'
+alias etcdctl='docker run --rm -e ETCDCTL_ENDPOINT=172.17.0.1:2379 quay.io/coreos/etcd:v3.1.7 etcdctl'
 
 ## Nsq
-alias to_nsq='docker run -it nsqio/nsq to_nsq'
+alias to_nsq='docker run --rm -it nsqio/nsq to_nsq'
 
 ## MySQL
-alias mysql='docker run -it mysql mysql'
+alias mysql='docker run --rm -it mysql mysql'
 
 ## Influx
-alias influx='docker run -it influxdb:1.2 influx'
+alias influx='docker run --rm -it influxdb:1.2 influx'
+
+## PgSQL
+alias psql='docker run --rm -it postgres:9.5 psql'
