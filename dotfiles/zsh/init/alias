@@ -47,3 +47,7 @@ alias influx='docker run --rm -it influxdb:1.2 influx'
 
 ## PgSQL
 alias psql='docker run --rm -it postgres:9.5 psql'
+
+## Mongo
+
+alias mongo='docker run --rm -it mongo:3.4 mongo'
