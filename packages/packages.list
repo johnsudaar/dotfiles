@@ -35,3 +35,6 @@ guake,guake
 htop,htop
 grc,grc
 httpie,httpie
+
+# DNS
+dnsmasq,dnsmasq
