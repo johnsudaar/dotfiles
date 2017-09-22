@@ -1,5 +1,6 @@
 [user]
 	email = john@scalingo.com
 	name = Jonathan Hurter
+	signingkey = A08EDEEF77FF65AE
 [push]
 	default = simple
