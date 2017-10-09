@@ -26,11 +26,3 @@ export BASE_REPO_PATH=/home/john/Documents/Scalingo/appsdeck-builder/docker
 export SCALINGO_HOME=/home/john/Documents/Scalingo/
 export SCALINGO_REPOS_JSON=$SCALINGO_HOME/internal-documentation/
 
-# Project aliases
-PROJECTS_PATHS=($GOPATH/src/github.com/Scalingo $HOME/Documents/Scalingo)
-
-for project_path in $PROJECTS_PATHS ; do
-  for project in $(ls $project_path); do
-    alias $project=$project_path/$project
-  done
-done

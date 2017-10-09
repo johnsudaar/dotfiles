@@ -85,11 +85,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-source ~/.zsh/init/alias
+
 source ~/.zsh/init/env
-
+source ~/.zsh/init/alias
 source ~/.zsh/init/scalingo
-
 source ~/.bin/tmuxinator.zsh
 
 export fpath=(~/.zsh/completions $fpath)
@@ -97,5 +96,5 @@ export fpath=(~/.zsh/completions $fpath)
 autoload -Uz compinit && compinit
 
 source ~/.zsh/init/autocomplete
-
 source ~/.zsh/init/startup
+source ~/.zsh/init/projects

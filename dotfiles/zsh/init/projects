@@ -1,0 +1,35 @@
+# vim: filetype=zsh
+# Project aliases
+PROJECTS_PATHS=($GOPATH/src/github.com/Scalingo $HOME/Documents/Scalingo)
+
+for project_path in $PROJECTS_PATHS ; do
+  for project in $(ls $project_path); do
+    alias $project=$project_path/$project
+  done
+done
+
+function pedit {
+  if [ $? -ne 0 ] ; then
+    echo "edit PROJECT_NAME" >&2
+    exit 1
+  fi
+
+  project=$1
+  tmux new-window -n $1
+  tmux send-keys "$1" C-m
+  tmux send-keys nvim C-m
+}
+
+function _pedit {
+  values=()
+  for project in $PROJECTS_PATHS; do
+    for dir in $(ls $project); do
+      values+=("$dir:$project/$dir")
+    done
+  done
+
+  _describe 'values' values
+}
+
+compdef _pedit pedit
+
