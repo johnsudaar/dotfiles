@@ -38,6 +38,7 @@ alias etcdctl='docker run --rm -e ETCDCTL_ENDPOINT=172.17.0.1:2379 quay.io/coreo
 
 ## Nsq
 alias to_nsq='docker run --rm -it nsqio/nsq to_nsq'
+alias nsq_tail='docker run --rm -it nsqio/nsq nsq_tail'
 
 ## MySQL
 alias mysql='docker run --rm -it mysql mysql'
