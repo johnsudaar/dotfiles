@@ -6,3 +6,7 @@ FrozenStringLiteralComment:
   Enabled: false
 Documentation:
   Enabled: false
+RedundantReturn:
+  Enabled: false
+LineLength:
+  Max: 100
