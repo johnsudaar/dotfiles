@@ -30,6 +30,7 @@ function grepkill() {
 alias gt='grc -s -e go test'
 alias mt='grc -s -e make test -B'
 alias dgt='grc -s -e docker-compose run test go test'
+alias mdt='grc -s -e make docker-test -B'
 alias dmt='grc -s -e docker-compose run test make test -B'
 
 # Docker command replacement
