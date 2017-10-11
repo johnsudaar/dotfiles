@@ -17,7 +17,7 @@ function pedit {
   project=$1
   tmux new-window -n $1
   tmux send-keys "$1" C-m
-  tmux send-keys nvim C-m
+  tmux send-keys "nvim; exit" C-m
 }
 
 function _pedit {
