@@ -14,7 +14,7 @@ alias rmstopped='docker ps -a -q --filter="status=exited" | xargs docker rm'
 alias rmcreated='docker ps -a -q --filter="status=created" | xargs docker rm'
 alias curls="curl-unix-socket"
 alias screenoff='xset dpms force off'
-
+alias jg='cd $GOPATH/src/github.com/johnsudaar/'
 # dotfiles synchro
 alias dt='cd $DOTFILES_HOME'
 alias dcu='$DOTFILES_HOME/custom/installer.sh'
