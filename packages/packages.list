@@ -23,6 +23,7 @@ firefox,firefox
 jq,jq
 ack,ack
 xclip,xclip
+,jdk8-openjdk
 
 # Docker and VMS
 docker-ce,docker

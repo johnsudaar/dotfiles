@@ -23,6 +23,7 @@ Plug 'Valloric/ListToggle'
 Plug 'scrooloose/nerdcommenter'
 Plug 'iCyMind/NeoSolarized'
 Plug 'tpope/vim-haml'
+Plug 'rhysd/vim-grammarous'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
@@ -125,3 +126,10 @@ map <Leader>i z=
 map <Leader>o ]s
 " add the current word to the dictionary
 map <Leader>p zg
+
+" Open grammar info window
+nmap <Leader>a <Plug>(grammarous-move-to-info-window)
+" Go to next grammar error
+nmap <Leader>z <Plug>(grammarous-move-to-next-error)
+" Fix current grammar error
+nmap <Leader>e <Plug>(grammarous-fixit)
