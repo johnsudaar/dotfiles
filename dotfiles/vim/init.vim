@@ -109,7 +109,6 @@ au BufReadPost * syntax match nonascii "[^\u0000-\u007F]" containedin=ALL
 highlight nonascii guibg=Red ctermbg=1 term=standout
 
 " Mouse mode
-
 set mouse=a
 
 " Highlight cursor line
@@ -119,3 +118,10 @@ set cursorline
 nnoremap <C-g>d :GoDecls<CR>
 " Jump to declarations in current directory
 nnoremap <C-g>D :GoDeclsDir<CR>
+
+" open the list of alternatives
+map <Leader>i z=
+" go to the next misspelled word
+map <Leader>o ]s
+" add the current word to the dictionary
+map <Leader>p zg
