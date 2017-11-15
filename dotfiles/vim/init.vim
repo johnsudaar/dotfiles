@@ -133,3 +133,5 @@ nmap <Leader>a <Plug>(grammarous-move-to-info-window)
 nmap <Leader>z <Plug>(grammarous-move-to-next-error)
 " Fix current grammar error
 nmap <Leader>e <Plug>(grammarous-fixit)
+
+:set list
