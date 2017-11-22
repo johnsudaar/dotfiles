@@ -134,4 +134,9 @@ nmap <Leader>z <Plug>(grammarous-move-to-next-error)
 " Fix current grammar error
 nmap <Leader>e <Plug>(grammarous-fixit)
 
+" Show spaces and tabs
 :set list
+:hi NonText ctermfg=7 guifg=gray25
+
+" Handle ruby indentation
+autocmd FileType ruby set tabstop=8|set shiftwidth=2|set expandtab
