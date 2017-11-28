@@ -39,3 +39,10 @@ httpie,httpie
 
 # DNS
 dnsmasq,dnsmasq
+
+# Yubikey
+,yubikey-manager
+,yubikey-personalization-gui
+,yubico-pam
+,pcsc-tools
+,pcsclite
