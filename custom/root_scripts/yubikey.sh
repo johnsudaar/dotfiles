@@ -10,6 +10,7 @@ if [ $installStatus -ne 1 ] ; then
 fi
 
 installFile "$PROJECT_ROOT/custom/config/yubikeys" "/etc/yubikeys"
+chmod 644 /etc/yubikeys
 installStatus=$?
 if [ $installStatus -ne 1 ] ; then
   failFast $installStatus "Fail to install yubikeys"
