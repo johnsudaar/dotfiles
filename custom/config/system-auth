@@ -1,6 +1,6 @@
 #%PAM-1.0
 
-auth      required  pam_yubico.so   id=1 authfile=/etc/yubikeys
+auth      required  pam_yubico.so mode=challenge-response chalresp_path=/var/yubico
 auth      required  pam_unix.so     try_first_pass nullok
 auth      optional  pam_permit.so
 auth      required  pam_env.so
