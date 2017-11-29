@@ -1,10 +1,10 @@
 # vim: filetype=zsh
 # Project aliases
-PROJECTS_PATHS=($GOPATH/src/github.com/Scalingo $HOME/Documents/Scalingo)
+PROJECTS_PATHS=($GOPATH/src/github.com/Scalingo $HOME/Documents/Scalingo $GOPATH/src/github.com/johnsudaar $HOME/Documents/perso)
 
 for project_path in $PROJECTS_PATHS ; do
   for project in $(ls $project_path); do
-    alias $project=$project_path/$project
+    alias $project="tmux rename-window $project ; $project_path/$project"
   done
 done
 
