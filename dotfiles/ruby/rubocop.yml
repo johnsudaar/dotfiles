@@ -1,12 +1,27 @@
+AllCops:
+  TargetRubyVersion: 2.4
 MethodLength:
   Max: 25
+LineLength:
+  Max: 100
 NegatedIf:
+  Enabled: false
+NegatedWhile:
   Enabled: false
 FrozenStringLiteralComment:
   Enabled: false
 Documentation:
   Enabled: false
+TrailingCommaInLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+TrailingCommaInArguments:
+  EnforcedStyleForMultiline: consistent_comma
+MultilineBlockChain:
+  Enabled: false
 RedundantReturn:
   Enabled: false
-LineLength:
-  Max: 100
+SymbolArray:
+  EnforcedStyle: brackets
+WordArray:
+  EnforcedStyle: brackets
+
