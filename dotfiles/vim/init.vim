@@ -51,6 +51,8 @@ map <C-l> <C-W>l
 :set shiftwidth=2
 :set expandtab
 
+:set t_Co=256
+
 highlight Pmenu ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000
 let g:go_fmt_command = "goimports"
 

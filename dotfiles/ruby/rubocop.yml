@@ -24,4 +24,6 @@ SymbolArray:
   EnforcedStyle: brackets
 WordArray:
   EnforcedStyle: brackets
+ClassAndModuleChildren:
+  EnforcedStyle: compact
 
