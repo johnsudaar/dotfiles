@@ -15,6 +15,7 @@ neovim,neovim
 # Terminal utils
 zsh,zsh
 tmux,tmux
+,rxvt-unicode
 
 # Misc
 firefox,firefox

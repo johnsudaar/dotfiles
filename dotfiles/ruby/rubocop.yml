@@ -26,4 +26,7 @@ WordArray:
   EnforcedStyle: brackets
 ClassAndModuleChildren:
   EnforcedStyle: compact
-
+AbcSize:
+  Max: 40
+CyclomaticComplexity:
+  Max: 10:

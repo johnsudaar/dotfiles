@@ -30,6 +30,7 @@ Plug 'fishbullet/deoplete-ruby'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
 
 Plug 'jiangmiao/auto-pairs'
+Plug 'majutsushi/tagbar'
 call plug#end()
 
 autocmd StdinReadPre * let s:std_in=1
@@ -142,3 +143,6 @@ nmap <Leader>e <Plug>(grammarous-fixit)
 
 " Handle ruby indentation
 autocmd FileType ruby set tabstop=8|set shiftwidth=2|set expandtab
+
+" Tags bar
+autocmd VimEnter * TagbarToggle
