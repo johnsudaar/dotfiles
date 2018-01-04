@@ -192,8 +192,8 @@ smart_borders on
 exec "bash /home/john/.screenlayouts/scalingo.sh"
 
 # Backgroupd picture
-
 exec "bash /home/john/.config/i3/.bg.sh"
+bindsym $mod+n exec "bash /home/john/.config/i3/.bg.sh"
 
 # Startup apps
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/firefox; workspace 2; exec /usr/bin/spotify; workspace 3; exec /usr/bin/thunderbird-beta'
@@ -202,3 +202,7 @@ assign [class="Firefox"] 2
 # Scrot
 bindsym Print exec scrot -u '%Y-%m-%d_$wx$h_scrot.png' -e 'mv $f ~/Pictures'
 bindsym --release Shift+Print exec scrot -s '%Y-%m-%d_$wx$h_scrot.png' -e 'mv $f ~/Pictures'
+
+# Touchpad config
+
+exec --no-startup-id synclient TapButton1=1 TapButton2=3 TapButton3=2 HorizEdgeScroll=1 VertEdgeScroll=1 VertScrollDelta=-15
