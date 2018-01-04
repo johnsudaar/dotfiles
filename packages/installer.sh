@@ -37,7 +37,15 @@ if [ "$manager" == "apt" ] ; then
   sudo apt-get update | identOutput
   sudo apt-get install -y $package_list | identOutput
 else
-  yes | sudo pacman -Sy $package_list | identOutput
+  yes | sudo yaourt -Sy $package_list | identOutput
+fi
+
+post_install_hook_path="$PROJECT_ROOT/packages/$manager/post_install_hook.sh"
+
+if [ -f $post_install_hook_path ] ; then
+  info "Running post package hooks"
+  sudo $post_install_hook_path $PROJECT_ROOT
+  failFast $? "Hook failed, stopping package installation"
 fi
 
 success "Packages installed"

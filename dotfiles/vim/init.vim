@@ -24,6 +24,7 @@ Plug 'scrooloose/nerdcommenter'
 Plug 'iCyMind/NeoSolarized'
 Plug 'tpope/vim-haml'
 Plug 'rhysd/vim-grammarous'
+Plug 'mxw/vim-jsx'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
@@ -161,3 +162,6 @@ function! CtrlPCommand()
 endfunction
 
 let g:ctrlp_cmd = 'call CtrlPCommand()'
+
+" JSX
+let g:jsx_ext_required = 0

@@ -1,7 +1,7 @@
 ! vim: filetype=xdefaults
 
 ! Font
-URxvt*font: xft:Ubuntu Mono derivative Powerline:size=14
+URxvt*font: xft:Ubuntu Mono derivative Powerline:size=8
 
 ! Colors
 urxvt*foreground: white
@@ -26,3 +26,4 @@ urxvt*background: black
 
 ! Scrollbar
 URxvt.scrollBar: false
+Xft.dpi: 150

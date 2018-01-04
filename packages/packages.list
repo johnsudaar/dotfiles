@@ -47,3 +47,16 @@ dnsmasq,dnsmasq
 ,yubico-pam
 ,pcsc-tools
 ,pcsclite
+
+# i3
+,i3-gaps
+,i3blocks
+,playerctl
+,rofi
+,i3lock
+,scrot
+,acpi
+,lm_sensors
+,feh
+,perl-json-xs
+,perl-anyevent-i3
