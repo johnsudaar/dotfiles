@@ -1,7 +1,7 @@
 ! vim: filetype=xdefaults
 
 ! Font
-URxvt*font: xft:Ubuntu Mono derivative Powerline:size=8
+URxvt*font: xft:Ubuntu Mono derivative Powerline:size=9
 
 ! Colors
 urxvt*foreground: white
