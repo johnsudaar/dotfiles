@@ -35,3 +35,4 @@ i3/bg.sh .config/i3/.bg.sh
 # Screen layouts
 
 screenlayouts/scalingo.sh .screenlayouts/scalingo.sh
+screenlayouts/laptop.sh .screenlayouts/laptop.sh
