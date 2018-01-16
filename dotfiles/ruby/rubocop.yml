@@ -33,3 +33,5 @@ CyclomaticComplexity:
   Max: 10
 NumericPredicate:
   EnforcedStyle: comparison
+PerceivedComplexity:
+  Max: 10
