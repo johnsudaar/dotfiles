@@ -26,6 +26,7 @@ Plug 'tpope/vim-haml'
 Plug 'rhysd/vim-grammarous'
 Plug 'mxw/vim-jsx'
 Plug 'ngmy/vim-rubocop'
+Plug 'gabrielelana/vim-markdown'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
@@ -164,7 +165,10 @@ endfunction
 
 let g:ctrlp_cmd = 'call CtrlPCommand()'
 
+let g:ctrlp_custom_ignore = 'node_modules\|vendor\|git'
+
 " JSX
 let g:jsx_ext_required = 0
 
 nmap <Leader>w :RuboCop --auto-correct<CR>
+
