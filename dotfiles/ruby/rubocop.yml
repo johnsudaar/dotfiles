@@ -25,6 +25,9 @@ SymbolArray:
   EnforcedStyle: brackets
 WordArray:
   EnforcedStyle: brackets
+RegexpLiteral:
+  EnforcedStyle: mixed
+  AllowInnerSlashes: true
 ClassAndModuleChildren:
   EnforcedStyle: compact
 AbcSize:
@@ -33,5 +36,7 @@ CyclomaticComplexity:
   Max: 10
 NumericPredicate:
   EnforcedStyle: comparison
+ConditionalAssignment:
+  Enabled: false
 PerceivedComplexity:
   Max: 10

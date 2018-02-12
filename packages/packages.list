@@ -60,3 +60,4 @@ dnsmasq,dnsmasq
 ,feh
 ,perl-json-xs
 ,perl-anyevent-i3
+,network-manager-applet
