@@ -165,7 +165,7 @@ endfunction
 
 let g:ctrlp_cmd = 'call CtrlPCommand()'
 
-let g:ctrlp_custom_ignore = 'node_modules\|vendor\|git'
+let g:ctrlp_custom_ignore = 'node_modules\|vendor\|tmp'
 
 " JSX
 let g:jsx_ext_required = 0
