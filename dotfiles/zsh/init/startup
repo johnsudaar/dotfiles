@@ -2,8 +2,24 @@
 
 eval "$(rbenv init -)"
 eval "$(ndenv init -)"
-if [[ ! -n $TMUX ]] ; then
-    tmux
+
+if [ ! -f /tmp/ssh-agent.john.pid ] ; then
+  eval $(ssh-agent)
+  ssh-add ~/.ssh/id_rsa
+
+  disown $SSH_AGENT_PID
+
+  echo "$SSH_AGENT_PID" > /tmp/ssh-agent.john.pid
+  echo "$SSH_AUTH_SOCK" > /tmp/ssh-agent.john.sock
+else
+  SSH_AGENT_PID=$(cat /tmp/ssh-agent.john.pid)
+  SSH_AUTH_SOCK=$(cat /tmp/ssh-agent.john.sock)
+
+  export SSH_AGENT_PID
+  export SSH_AUTH_SOCK
 fi
 
+if [[ ! -n $TMUX ]] ; then
+  tmux
+fi
 
