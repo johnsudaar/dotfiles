@@ -34,6 +34,8 @@ Plug 'zchee/deoplete-go', { 'do': 'make'}
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'majutsushi/tagbar'
+
+Plug 'junegunn/vim-easy-align'
 call plug#end()
 
 autocmd StdinReadPre * let s:std_in=1
@@ -58,7 +60,10 @@ map <C-l> <C-W>l
 :set t_Co=256
 
 highlight Pmenu ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000
+
+" vim-go
 let g:go_fmt_command = "goimports"
+let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 
 autocmd BufWritePre * %s/\s\+$//e
 
@@ -171,4 +176,6 @@ let g:ctrlp_custom_ignore = 'node_modules\|vendor\|tmp'
 let g:jsx_ext_required = 0
 
 nmap <Leader>w :RuboCop --auto-correct<CR>
+
+au FileType markdown vmap <Leader>t :EasyAlign*<Bar><Enter>
 

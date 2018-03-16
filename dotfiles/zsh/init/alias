@@ -53,3 +53,7 @@ alias psql='docker run --rm -it postgres:9.5 psql'
 ## Mongo
 
 alias mongo='docker run --rm -it mongo:3.4 mongo'
+
+## Redis
+
+alias redis-cli='docker run --rm -it redis redis-cli'
