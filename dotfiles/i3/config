@@ -150,9 +150,10 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume 0 +5%; pkill -RTMIN+10 i3blocks"
-bindsym XF86AudioLowerVolume exec "pactl set-sink-volume 0 -5%; pkill -RTMIN+10 i3blocks"
-bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle; pkill -RTMIN+10 i3blocks"
+
+bindsym XF86AudioMute        exec "amixer set Master toggle; pkill -RTMIN+10 i3blocks"
+bindsym XF86AudioLowerVolume exec "amixer -q set Master 4000- unmute; pkill -RTMIN+10 i3blocks"
+bindsym XF86AudioRaiseVolume exec "amixer -q set Master 4000+ unmute; pkill -RTMIN+10 i3blocks"
 
 # Sreen brightness controls
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 # increase screen brightness

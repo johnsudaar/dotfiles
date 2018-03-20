@@ -13,7 +13,9 @@ FrozenStringLiteralComment:
   Enabled: false
 Documentation:
   Enabled: false
-TrailingCommaInLiteral:
+TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: consistent_comma
+TrailingCommaInHashLiteral:
   EnforcedStyleForMultiline: consistent_comma
 TrailingCommaInArguments:
   EnforcedStyleForMultiline: consistent_comma
