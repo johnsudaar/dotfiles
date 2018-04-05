@@ -9,6 +9,7 @@ zsh/zshrc .zshrc
 
 # VIM
 vim/init.vim .config/nvim/init.vim
+vim/ginit.vim .config/nvim/ginit.vim
 
 # TMUX
 tmux/tmux.conf .tmux.conf

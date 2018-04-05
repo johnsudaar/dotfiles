@@ -36,6 +36,9 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'majutsushi/tagbar'
 
 Plug 'junegunn/vim-easy-align'
+
+"Gonvim
+Plug 'equalsraf/neovim-gui-shim'
 call plug#end()
 
 autocmd StdinReadPre * let s:std_in=1
