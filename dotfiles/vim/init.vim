@@ -31,11 +31,14 @@ Plug 'gabrielelana/vim-markdown'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+" Plug 'sebastianmarkow/deoplete-rust'
 
 Plug 'jiangmiao/auto-pairs'
 Plug 'majutsushi/tagbar'
 
 Plug 'junegunn/vim-easy-align'
+
+Plug 'rust-lang/rust.vim'
 
 "Gonvim
 Plug 'equalsraf/neovim-gui-shim'
@@ -169,7 +172,7 @@ function! CtrlPCommand()
         let c = c + 1
     endwhile
     exec 'CtrlP'
-endfunction
+  endfunction
 
 let g:ctrlp_cmd = 'call CtrlPCommand()'
 
@@ -182,3 +185,8 @@ nmap <Leader>w :RuboCop --auto-correct<CR>
 
 au FileType markdown vmap <Leader>t :EasyAlign*<Bar><Enter>
 
+" Rust
+
+let g:rustfmt_autosave = 1
+let g:deoplete#sources#rust#racer_binary = $HOME.'/.cargo/bin/racer'
+let g:deoplete#sources#rust#rust_source_path = $HOME.'/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/'

@@ -9,6 +9,7 @@ export PATH=$PATH:$HOME/Documents/cli-tools/robomongo/bin
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.ndenv/bin:$PATH"
 
+export PATH="$HOME/.cargo/bin:$PATH"
 
 export GITHUB_TOKEN=$(grep auth_token ~/.config/hub | cut -d':' -f2 | tr -d ' ')
 
