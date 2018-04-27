@@ -1,7 +1,7 @@
 # vim: filetype=zsh
 
 export GOPATH="$HOME/gocode"
-export PATH=/usr/local/go/bin:$GOPATH/bin:$PATH
+export PATH=$GOPATH/bin:/usr/local/go/bin:$PATH
 export PATH=$PATH:$HOME/Documents/cli-tools/perso
 export PATH=$PATH:$HOME/Documents/cli-tools/robomongo/bin
 
@@ -14,3 +14,5 @@ export PATH="$HOME/.cargo/bin:$PATH"
 export GITHUB_TOKEN=$(grep auth_token ~/.config/hub | cut -d':' -f2 | tr -d ' ')
 
 export DOTFILES_HOME="$HOME/Documents/perso/dotfiles/"
+
+export DOCKER_VOLUMES_PATH=/var/lib/docker/volumes

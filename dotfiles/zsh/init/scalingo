@@ -5,7 +5,7 @@ alias agoravpn="cd $HOME/Documents/vpn && sudo openvpn $HOME/Documents/vpn/john@
 
 # API aliases
 alias sscalingo="SCALINGO_AUTH_URL=https://auth.st-sc.fr SSH_HOST=staging.scalingo.com:22 SCALINGO_API_URL=https://api-staging.scalingo.com scalingo"
-alias dscalingo="SCALINGO_AUTH_URL=http://localhost:1234 SCALINGO_API_URL=http://localhost:3001 scalingo"
+alias dscalingo="SCALINGO_AUTH_URL=http://localhost:1234 SSH_HOST=172.17.0.1:2200 SCALINGO_API_URL=http://localhost:3001 scalingo"
 
 # Directory configuration
 alias sg='cd $HOME/gocode/src/github.com/Scalingo'
