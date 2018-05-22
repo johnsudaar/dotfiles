@@ -2,3 +2,7 @@
 
 source ~/.zsh/completion/scalingo_complete.zsh
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Travis
+[ -f /home/john/.travis/travis.sh ] && source /home/john/.travis/travis.sh
+
