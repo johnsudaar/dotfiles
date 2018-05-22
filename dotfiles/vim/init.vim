@@ -40,6 +40,8 @@ Plug 'junegunn/vim-easy-align'
 
 Plug 'rust-lang/rust.vim'
 
+Plug 'hashivim/vim-terraform'
+
 "Gonvim
 Plug 'equalsraf/neovim-gui-shim'
 call plug#end()
@@ -190,3 +192,7 @@ au FileType markdown vmap <Leader>t :EasyAlign*<Bar><Enter>
 let g:rustfmt_autosave = 1
 let g:deoplete#sources#rust#racer_binary = $HOME.'/.cargo/bin/racer'
 let g:deoplete#sources#rust#rust_source_path = $HOME.'/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src/'
+
+" Terraform
+
+let g:terraform_align=1
