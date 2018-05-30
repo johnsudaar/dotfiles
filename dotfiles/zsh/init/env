@@ -12,6 +12,7 @@ export PATH="$HOME/.ndenv/bin:$PATH"
 export PATH="$HOME/.cargo/bin:$PATH"
 
 export GITHUB_TOKEN=$(grep auth_token ~/.config/hub | cut -d':' -f2 | tr -d ' ')
+export SCALINGO_TOKEN=$(cat ~/.config/scalingo/auth | jq .auth_config_data.localhost.tokens.token -r)
 
 export DOTFILES_HOME="$HOME/Documents/perso/dotfiles/"
 

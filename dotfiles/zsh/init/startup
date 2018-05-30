@@ -23,3 +23,9 @@ if [[ ! -n $TMUX ]] ; then
   tmux
 fi
 
+if [ -f $HOME/.bar_balance ] ; then
+  bar_balance=$(cat $HOME/.bar_balance)
+  if [[ $bar_balance -lt -20 ]] ; then
+    echo "Current bar balance: $bar_balance"
+  fi
+fi
