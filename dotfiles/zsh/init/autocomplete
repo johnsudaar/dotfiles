@@ -6,3 +6,5 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Travis
 [ -f /home/john/.travis/travis.sh ] && source /home/john/.travis/travis.sh
 
+# Vault
+complete -o nospace -C /usr/bin/vault vault

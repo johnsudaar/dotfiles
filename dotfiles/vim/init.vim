@@ -27,6 +27,7 @@ Plug 'rhysd/vim-grammarous'
 Plug 'mxw/vim-jsx'
 Plug 'ngmy/vim-rubocop'
 Plug 'gabrielelana/vim-markdown'
+Plug 'sheerun/vim-polyglot'
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
@@ -138,6 +139,7 @@ set cursorline
 nnoremap <C-g>d :GoDecls<CR>
 " Jump to declarations in current directory
 nnoremap <C-g>D :GoDeclsDir<CR>
+nnoremap <C-g>f :GoDoc<CR>
 
 " open the list of alternatives
 map <Leader>i z=
