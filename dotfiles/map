@@ -6,6 +6,8 @@
 # ZSH
 zsh/init .zsh/init
 zsh/zshrc .zshrc
+zsh/fzf/completion.zsh .zsh/fzf/completion.zsh
+zsh/fzf/key-bindings.zsh .zsh/fzf/key-bindings.zsh
 
 # VIM
 vim/init.vim .config/nvim/init.vim

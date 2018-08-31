@@ -99,3 +99,5 @@ autoload -Uz compinit && compinit
 source ~/.zsh/init/autocomplete
 source ~/.zsh/init/startup
 source ~/.zsh/init/projects
+source ~/.zsh/fzf/completion.zsh
+source ~/.zsh/fzf/key-bindings.zsh

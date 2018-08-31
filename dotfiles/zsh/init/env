@@ -17,3 +17,6 @@ export SCALINGO_TOKEN=$(cat ~/.config/scalingo/auth | jq .auth_config_data.local
 export DOTFILES_HOME="$HOME/Documents/perso/dotfiles/"
 
 export DOCKER_VOLUMES_PATH=/var/lib/docker/volumes
+
+alias preview="fzf --preview 'bat --color \"always\" {}'"
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"

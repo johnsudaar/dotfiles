@@ -21,6 +21,9 @@ alias dcu='$DOTFILES_HOME/custom/installer.sh'
 alias dpa='$DOTFILES_HOME/packages/installer.sh pacman'
 alias ddo='$DOTFILES_HOME/dotfiles/installer.sh $HOME'
 
+# Better tools
+alias cat='bat'
+
 # Process
 function grepkill() {
  ps aux | grep $1 | tr -s ' ' | cut -d' ' -f2 | xargs kill -9
