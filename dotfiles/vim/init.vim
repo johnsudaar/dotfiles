@@ -45,6 +45,8 @@ Plug 'hashivim/vim-terraform'
 
 "Gonvim
 Plug 'equalsraf/neovim-gui-shim'
+
+Plug 'liuchengxu/vim-which-key'
 call plug#end()
 
 autocmd StdinReadPre * let s:std_in=1
@@ -198,3 +200,7 @@ let g:deoplete#sources#rust#rust_source_path = $HOME.'/.rustup/toolchains/stable
 " Terraform
 
 let g:terraform_align=1
+
+" Which key
+
+nnoremap <silent> <leader> :WhichKey ',' <CR>
