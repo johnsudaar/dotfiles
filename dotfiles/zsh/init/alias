@@ -32,7 +32,7 @@ function grepkill() {
 # Grc
 alias gt='grc -s -e go test'
 alias mt='grc -s -e make test -B'
-alias dgt='grc -s -e docker-compose run test go test'
+alias dgt='grc -s -e docker-compose exec test go test'
 alias mdt='grc -s -e make docker-test -B'
 alias dmt='grc -s -e docker-compose run test make test -B'
 
@@ -54,9 +54,12 @@ alias influx='docker run --rm -it influxdb:1.2 influx'
 alias psql='docker run --rm -it postgres:9.5 psql'
 
 ## Mongo
-
 alias mongo='docker run --rm -it mongo:3.4 mongo'
 
 ## Redis
-
 alias redis-cli='docker run --rm -it redis redis-cli'
+
+## Link
+alias link1='link-client --host 172.17.0.1:1313 -u link -p password'
+alias link2='link-client --host 172.17.0.1:1314 -u link -p password'
+alias link3='link-client --host 172.17.0.1:1315 -u link -p password'

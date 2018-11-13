@@ -32,6 +32,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
 Plug 'zchee/deoplete-go', { 'do': 'make'}
+Plug 'mdempsky/gocode', { 'rtp': 'nvim', 'do': '~/.config/nvim/plugged/gocode/nvim/symlink.sh' }
 " Plug 'sebastianmarkow/deoplete-rust'
 
 Plug 'jiangmiao/auto-pairs'
@@ -75,6 +76,7 @@ highlight Pmenu ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000
 " vim-go
 let g:go_fmt_command = "goimports"
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+
 
 autocmd BufWritePre * %s/\s\+$//e
 
