@@ -2,7 +2,7 @@
 
 alias git="hub"
 alias vi="nvim"
-alias dnuke='docker rm -f $(docker ps -aq)'
+alias dnuke='docker rm -f $(docker ps -aq); docker network rm $(docker network ls -q)'
 alias master="git checkout master"
 alias co='docker-compose'
 alias dc='docker'
@@ -39,6 +39,7 @@ alias dmt='grc -s -e docker-compose run test make test -B'
 # Docker command replacement
 ## Etcd
 alias etcdctl='docker run --rm -e ETCDCTL_ENDPOINT=172.17.0.1:2379 quay.io/coreos/etcd:v3.1.7 etcdctl'
+alias petcdctl='docker run --rm -e ETCDCTL_ENDPOINT=https://172.17.0.1:2381 -v /home/john/gocode/src/github.com/Scalingo/appsdeck-database/dev/ssl/etcd_db_cluster_mgmt:/cluster_ssl quay.io/coreos/etcd:v3.1.7 etcdctl --ca-file=/cluster_ssl/ca.pem'
 
 ## Nsq
 alias to_nsq='docker run --rm -it nsqio/nsq to_nsq'
@@ -63,3 +64,7 @@ alias redis-cli='docker run --rm -it redis redis-cli'
 alias link1='link-client --host 172.17.0.1:1313 -u link -p password'
 alias link2='link-client --host 172.17.0.1:1314 -u link -p password'
 alias link3='link-client --host 172.17.0.1:1315 -u link -p password'
+
+## Dive
+
+alias dive='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive:latest'

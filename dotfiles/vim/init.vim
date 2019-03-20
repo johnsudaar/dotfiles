@@ -48,6 +48,9 @@ Plug 'hashivim/vim-terraform'
 Plug 'equalsraf/neovim-gui-shim'
 
 Plug 'liuchengxu/vim-which-key'
+
+Plug 'KSP-KOS/EditorTools', {'rtp': 'VIM/vim-kerboscript'}
+
 call plug#end()
 
 autocmd StdinReadPre * let s:std_in=1
@@ -202,6 +205,7 @@ let g:deoplete#sources#rust#rust_source_path = $HOME.'/.rustup/toolchains/stable
 " Terraform
 
 let g:terraform_align=1
+let g:terraform_fmt_on_save=1
 
 " Which key
 
