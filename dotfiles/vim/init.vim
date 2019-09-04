@@ -209,4 +209,4 @@ let g:terraform_fmt_on_save=1
 
 " Which key
 
-nnoremap <silent> <leader> :WhichKey ',' <CR>
+" "nnoremap <silent> <leader> :WhichKey ',' <CR>
