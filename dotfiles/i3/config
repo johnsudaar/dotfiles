@@ -213,5 +213,8 @@ exec --no-startup-id synclient TapButton1=1 TapButton2=3 TapButton3=2 HorizEdgeS
 exec --no-startup-id nm-applet
 
 # SSH Agent
-
 exec --no-startup-id /usr/lib/gnome-settings-daemon/gnome-settings-daemon
+
+# i3blocks hooks
+bindsym --release Caps_Lock exec pkill -SIGRTMIN+11 i3blocks
+bindsym --release Num_Lock  exec pkill -SIGRTMIN+11 i3blocks
