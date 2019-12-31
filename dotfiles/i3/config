@@ -201,8 +201,12 @@ exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/firefox; workspace 2; ex
 assign [class="Firefox"] 2
 
 # Scrot
-bindsym Print exec scrot -u '%Y-%m-%d_$wx$h_scrot.png' -e 'mv $f ~/Pictures'
-bindsym --release Shift+Print exec scrot -s '%Y-%m-%d_$wx$h_scrot.png' -e 'mv $f ~/Pictures'
+# bindsym Print exec scrot -u '%Y-%m-%d_$wx$h_scrot.png' -e 'mv $f ~/Pictures'
+# bindsym --release Shift+Print exec scrot -s '%Y-%m-%d_$wx$h_scrot.png' -e 'mv $f ~/Pictures'
+
+# Flameshot
+bindsym Print exec flameshot screen -p $HOME/Pictures
+bindsym --release Shift+Print exec flameshot gui
 
 # Touchpad config
 

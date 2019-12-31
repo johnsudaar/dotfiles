@@ -49,6 +49,9 @@ colour=red
 regexp=^\s+have.*
 colour=red
 -
+regexp=^\s+actual.*
+colour=red
+-
 regexp=^\s+want.*
 colour=green
 -

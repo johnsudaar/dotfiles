@@ -27,7 +27,9 @@ Plug 'rhysd/vim-grammarous'
 Plug 'mxw/vim-jsx'
 Plug 'ngmy/vim-rubocop'
 Plug 'gabrielelana/vim-markdown'
-Plug 'sheerun/vim-polyglot'
+
+" See https://github.com/mxw/vim-jsx/issues/10 for this issue
+Plug 'sheerun/vim-polyglot', { 'do': 'rm ~/.config/nvim/plugged/vim-polyglot/after/indent/javascript.vim' }
 
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'fishbullet/deoplete-ruby'
@@ -87,6 +89,7 @@ colorscheme NeoSolarized
 
 let g:syntastic_ruby_checkers = ['rubocop', 'mri']
 let g:neomake_ruby_enabled_makers = ['rubocop', 'mri']
+highlight NeomakeVirtualtextError guifg=red
 
 " Better QuickFix window height
 au FileType qf call AdjustWindowHeight(3, 10)
