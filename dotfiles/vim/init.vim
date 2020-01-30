@@ -27,6 +27,7 @@ Plug 'rhysd/vim-grammarous'
 Plug 'mxw/vim-jsx'
 Plug 'ngmy/vim-rubocop'
 Plug 'gabrielelana/vim-markdown'
+Plug 'airblade/vim-gitgutter'
 
 " See https://github.com/mxw/vim-jsx/issues/10 for this issue
 Plug 'sheerun/vim-polyglot', { 'do': 'rm ~/.config/nvim/plugged/vim-polyglot/after/indent/javascript.vim' }
