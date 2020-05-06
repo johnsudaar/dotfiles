@@ -101,3 +101,5 @@ source ~/.zsh/init/startup
 source ~/.zsh/init/projects
 source ~/.zsh/fzf/completion.zsh
 source ~/.zsh/fzf/key-bindings.zsh
+
+source $SCALINGO_HOME/tools-and-hacks/zsh/scalingo

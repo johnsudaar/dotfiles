@@ -1,6 +1,8 @@
 # vim: filetype=zsh
 
 export GOPATH="$HOME/gocode"
+export GOPRIVATE="github.com/Scalingo"
+
 export PATH=$GOPATH/bin:/usr/local/go/bin:$PATH
 export PATH=$PATH:$HOME/Documents/cli-tools/perso
 export PATH=$PATH:$HOME/Documents/cli-tools/robomongo/bin

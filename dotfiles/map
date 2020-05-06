@@ -35,6 +35,10 @@ i3/lock.sh .config/i3/.lock.sh
 i3/i3blocks.conf .i3blocks.conf
 i3/bg.sh .config/i3/.bg.sh
 
+# ssh
+
+ssh/config .ssh/config
+
 # Screen layouts
 
 screenlayouts/scalingo.sh .screenlayouts/scalingo.sh

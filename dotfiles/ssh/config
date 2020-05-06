@@ -1,0 +1,8 @@
+Host powphie
+  HostName powphie.hurter.fr
+  User john
+  Port 4949
+Host hurter.fr
+  HostName hurter.fr
+  User john
+  Port 4949

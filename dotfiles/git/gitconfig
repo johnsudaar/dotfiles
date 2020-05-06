@@ -29,4 +29,5 @@
   whitespace = red reverse
 [diff]
   noprefix = true
-
+[url "ssh://git@github.com:22/"]
+  insteadOf = https://github.com/

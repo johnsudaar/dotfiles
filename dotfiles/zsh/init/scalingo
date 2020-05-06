@@ -4,23 +4,7 @@ alias scavpn="cd $HOME/Documents/vpn && sudo openvpn $HOME/Documents/vpn/john@sc
 alias agoravpn="cd $HOME/Documents/vpn && sudo openvpn $HOME/Documents/vpn/john@agora.ovpn"
 
 # API aliases
-alias oscalingo="SCALINGO_API_URL=https://api-osc-fr1.scalingo.com SCALINGO_DB_URL=https://db-api-osc-fr1.scalingo.com SSH_HOST=ssh-osc-fr1.scalingo.com:2200 scalingo"
-alias sscalingo="SCALINGO_AUTH_URL=https://auth.st-sc.fr SSH_HOST=staging.scalingo.com:22 SCALINGO_API_URL=https://api-staging.scalingo.com scalingo"
-alias dscalingo="SCALINGO_AUTH_URL=http://172.17.0.1:1234 SSH_HOST=172.17.0.1:2200 SCALINGO_API_URL=http://172.17.0.1:3001 SCALINGO_DB_URL=http://172.17.0.1:9292 scalingo"
 alias dterraform="SCALINGO_AUTH_URL=http://172.17.0.1:1234 SCALINGO_API_URL=http://172.17.0.1:3001 SCALINGO_API_TOKEN=tk-us-jQq68tottYL6fibcY7c2Ev4UvTNIo_Haqn2RFYTy3VSCKxYb terraform"
-
-# Directory configuration
-alias sg='cd $HOME/gocode/src/github.com/Scalingo'
-alias sc='cd $HOME/Documents/Scalingo'
-
-# Custom scripts
-alias check='$SCALINGO_HOME/tools-and-hacks/repo_checker/repo_checker.rb'
-alias gogo='$SCALINGO_HOME/tools-and-hacks/scalingo-upgrader/scalingo-upgrader'
-alias manager='$SCALINGO_HOME/tools-and-hacks/manager/manager.rb'
-alias dcurl='$SCALINGO_HOME/tools-and-hacks/dcurl/dcurl'
-alias acurl='$SCALINGO_HOME/tools-and-hacks/acurl/acurl'
-
-alias infra="tmuxinator containers"
 
 # Appsdeck repo and builder configuration
 export BUILDPACKS_PATH=/home/john/Documents/Scalingo/appsdeck-builder/buildpacks

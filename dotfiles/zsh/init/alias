@@ -39,6 +39,7 @@ alias dmt='grc -s -e docker-compose run test make test -B'
 # Docker command replacement
 ## Etcd
 alias etcdctl='docker run --rm -e ETCDCTL_ENDPOINT=172.17.0.1:2379 quay.io/coreos/etcd:v3.1.7 etcdctl'
+alias etcdctl3='docker run --rm -e ETCDCTL_API=3 -e ETCDCTL_ENDPOINT=172.17.0.1:2379 quay.io/coreos/etcd:v3.1.7 etcdctl'
 alias petcdctl='docker run --rm -e ETCDCTL_ENDPOINT=https://172.17.0.1:2381 -v /home/john/gocode/src/github.com/Scalingo/appsdeck-database/dev/ssl/etcd_db_cluster_mgmt:/cluster_ssl quay.io/coreos/etcd:v3.1.7 etcdctl --ca-file=/cluster_ssl/ca.pem'
 
 ## Nsq
