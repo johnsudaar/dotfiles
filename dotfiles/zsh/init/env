@@ -23,3 +23,5 @@ export DOCKER_VOLUMES_PATH=/var/lib/docker/volumes
 
 alias preview="fzf --preview 'bat --color \"always\" {}'"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
+
+export EDITOR=$(which nvim)
