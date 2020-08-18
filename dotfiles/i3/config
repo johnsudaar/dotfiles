@@ -178,7 +178,7 @@ bar {
 bindsym $mod+d exec "rofi -combi-modi window,drun -show combi -modi combi"
 
 # i3lock
-bindsym $mod+b exec "bash ~/.config/i3/.lock.sh"
+bindsym $mod+b exec "gdmflexiserver"
 
 bindsym $mod+x move workspace to output left
 
