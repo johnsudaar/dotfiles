@@ -1,2 +1,3 @@
 #!/bin/sh
-xrandr --output VIRTUAL1 --off --output eDP1 --mode 3200x1800 --pos 0x2160 --rotate normal --output DP1 --mode 3840x2160 --pos 0x0 --rotate normal --output HDMI2 --off --output HDMI1 --off --output DP2 --off
+xrandr --output eDP-1 --primary --mode 1920x1200 --pos 6400x0 --rotate normal --scale 1.5x1.5 --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-1-8 --mode 2560x1440 --pos 3200x0 --rotate normal --scale 1.25x1.25 --output DP-1-1 --mode 2560x1440 --pos 0x0 --scale 1.25x1.25
+xrandr --output eDP-1 --primary --mode 1920x1200 --pos 6400x0 --rotate normal --scale 1.5x1.5 --output DP-1 --off --output DP-2 --off --output DP-3 --off --output DP-4 --off --output DP-3-8 --mode 2560x1440 --pos 3200x0 --rotate normal --scale 1.25x1.25 --output DP-3-1 --mode 2560x1440 --pos 0x0  --scale 1.25x1.25

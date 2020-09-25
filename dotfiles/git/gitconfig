@@ -1,7 +1,7 @@
 [user]
 	email = john@scalingo.com
 	name = Jonathan Hurter
-	signingkey = EC1238FDD7FFDD0D
+	signingkey = 0863F190FDD73911
 [push]
 	default = simple
 [commit]

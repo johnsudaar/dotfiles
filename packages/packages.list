@@ -19,12 +19,15 @@ tmux,tmux
 
 # Misc
 firefox,firefox
+thunderbird,thunderbird
 ,make
 ,python
 jq,jq
 ack,ack
 xclip,xclip
 ,jdk8-openjdk
+,bat
+,diff-so-fancy
 
 # Docker and VMS
 docker-ce,docker
@@ -61,3 +64,6 @@ dnsmasq,dnsmasq
 ,perl-json-xs
 ,perl-anyevent-i3
 ,network-manager-applet
+
+# Audio
+, pavucontrol

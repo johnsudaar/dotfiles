@@ -1,5 +1,5 @@
 #!/bin/bash
-version=1.13
+version=1.15
 
 /usr/local/go/bin/go version | grep $version > /dev/null
 

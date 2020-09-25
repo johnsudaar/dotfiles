@@ -37,7 +37,7 @@ if [ "$manager" == "apt" ] ; then
   sudo apt-get update | identOutput
   sudo apt-get install -y $package_list | identOutput
 else
-  yes | sudo yaourt -Sy $package_list | identOutput
+  yes | sudo yay -Sy $package_list | identOutput
 fi
 
 post_install_hook_path="$PROJECT_ROOT/packages/$manager/post_install_hook.sh"

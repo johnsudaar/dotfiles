@@ -23,6 +23,7 @@ alias ddo='$DOTFILES_HOME/dotfiles/installer.sh $HOME'
 
 # Better tools
 alias cat='bat'
+alias dig='drill' # I know but habits are hard to get rid off
 
 # Process
 function grepkill() {
