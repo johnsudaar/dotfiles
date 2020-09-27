@@ -6,3 +6,7 @@ Host hurter.fr
   HostName hurter.fr
   User john
   Port 4949
+
+Host game.hurter.fr
+  User john
+  Port 4949
