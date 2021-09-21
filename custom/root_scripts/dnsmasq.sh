@@ -1,5 +1,7 @@
 #!/bin/bash
 
+exit 0
+
 installFile "$PROJECT_ROOT/custom/config/dns/resolv.conf" "/etc/resolv.conf"
 installStatus=$?
 if [ $installStatus -eq 1 ] ; then

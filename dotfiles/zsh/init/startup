@@ -6,6 +6,7 @@ eval "$(ndenv init -)"
 if [ ! -f /tmp/ssh-agent.john.pid ] ; then
   eval $(ssh-agent)
   ssh-add ~/.ssh/id_rsa
+  ssh-add ~/.ssh/id_ed25519
 
   disown $SSH_AGENT_PID
 

@@ -1,5 +1,7 @@
 #!/bin/bash
 
+exit 0
+
 systemctl enable pcscd
 systemctl start pcscd
 

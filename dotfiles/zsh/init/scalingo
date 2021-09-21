@@ -1,5 +1,7 @@
 # vim: filetype=zsh
 
+alias vpn="$SCALINGO_HOME/tools-and-hacks/strongswan/strongswan.sh"
+
 alias scavpn="cd $HOME/Documents/vpn && sudo openvpn $HOME/Documents/vpn/john@scalingo.ovpn"
 alias agoravpn="cd $HOME/Documents/vpn && sudo openvpn $HOME/Documents/vpn/john@agora.ovpn"
 

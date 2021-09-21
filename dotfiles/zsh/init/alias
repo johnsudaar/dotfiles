@@ -1,5 +1,9 @@
 # vim: filetype=sh
 
+if ! command -v bat &> /dev/null ; then
+  alias bat="batcat"
+fi
+
 alias git="hub"
 alias vi="nvim"
 alias dnuke='docker rm -f $(docker ps -aq); docker network rm $(docker network ls -q)'
@@ -18,7 +22,13 @@ alias jg='cd $GOPATH/src/github.com/johnsudaar/'
 # dotfiles synchro
 alias dt='cd $DOTFILES_HOME'
 alias dcu='$DOTFILES_HOME/custom/installer.sh'
-alias dpa='$DOTFILES_HOME/packages/installer.sh pacman'
+
+if command -v pacman &> /dev/null ; then
+  alias dpa='$DOTFILES_HOME/packages/installer.sh pacman'
+else
+  alias dpa='$DOTFILES_HOME/packages/installer.sh apt'
+fi
+
 alias ddo='$DOTFILES_HOME/dotfiles/installer.sh $HOME'
 
 # Better tools

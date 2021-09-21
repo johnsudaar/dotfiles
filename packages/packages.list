@@ -4,7 +4,7 @@
 # Source code management
 git,git
 gitg,gitg
-,hub
+hub,hub
 
 # Text editor
 ,atom
@@ -26,7 +26,7 @@ jq,jq
 ack,ack
 xclip,xclip
 ,jdk8-openjdk
-,bat
+bat,bat
 ,diff-so-fancy
 
 # Docker and VMS
@@ -52,18 +52,25 @@ dnsmasq,dnsmasq
 ,pcsclite
 
 # i3
-,i3-gaps
-,i3blocks
-,playerctl
-,rofi
+i3-gaps,i3-gaps
+i3blocks,i3blocks
+playerctl,playerctl
+rofi,rofi
 ,i3lock
-,scrot
-,acpi
+scrot,scrot
+acpi,acpi
 ,lm_sensors
-,feh
+feh,feh
+fzf,fzf
 ,perl-json-xs
 ,perl-anyevent-i3
 ,network-manager-applet
+xautolock,
+
+# Others
+chromium-browser,chromium
+spotify-client,spotify
+flameshot,
 
 # Audio
 , pavucontrol
