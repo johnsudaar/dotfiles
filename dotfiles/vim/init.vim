@@ -7,10 +7,9 @@ filetype plugin on
 
 call plug#begin()
 Plug 'Shougo/dein.vim'
-Plug 'scrooloose/nerdtree'
+Plug 'preservim/nerdtree'
 Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'ctrlpvim/ctrlp.vim'
-Plug 'neomake/neomake'
 Plug 'itchyny/lightline.vim'
 Plug 'fatih/vim-go'
 Plug 'mustache/vim-mustache-handlebars'
@@ -47,13 +46,17 @@ Plug 'rust-lang/rust.vim'
 
 Plug 'hashivim/vim-terraform'
 
+Plug 'jxnblk/vim-mdx-js'
+
+Plug 'w0rp/ale'
+Plug 'vim-airline/vim-airline'
+
 "Gonvim
 Plug 'equalsraf/neovim-gui-shim'
 
 Plug 'liuchengxu/vim-which-key'
 
 Plug 'KSP-KOS/EditorTools', {'rtp': 'VIM/vim-kerboscript'}
-
 call plug#end()
 
 autocmd StdinReadPre * let s:std_in=1
@@ -80,17 +83,28 @@ map <C-l> <C-W>l
 highlight Pmenu ctermfg=15 ctermbg=0 guifg=#ffffff guibg=#000000
 
 " vim-go
+
+" Coloration syntaxique
+let g:go_highlight_types = 1
+let g:go_highlight_functions = 1
+let g:go_highlight_methods = 1
+
+" Whenever we save, call
 let g:go_fmt_command = "goimports"
+let g:go_fmt_options = {
+  \ 'gofmt': '-s',
+  \ 'goimports': '-local github.com/Scalingo',
+  \ }
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
+let g:go_decls_includes = "func,type" " GoDecls gives functions and types names
+let g:go_auto_type_info = 0 " Set to 1 to automatically fetch the signature of everything
+
+let g:go_list_type = "quickfix" "
 
 
 autocmd BufWritePre * %s/\s\+$//e
 
 colorscheme NeoSolarized
-
-let g:syntastic_ruby_checkers = ['rubocop', 'mri']
-let g:neomake_ruby_enabled_makers = ['rubocop', 'mri']
-highlight NeomakeVirtualtextError guifg=red
 
 " Better QuickFix window height
 au FileType qf call AdjustWindowHeight(3, 10)
@@ -115,9 +129,6 @@ let g:NERDDefaultAlign = 'left'
 let g:NERDTreeShowHidden = 1
 let NERDTreeMapOpenVSplit = "v"
 let NERDTreeMapOpenSplit = "h"
-
-" Neomake Configuration
-autocmd! BufWritePost * Neomake
 
 " Deoplete configuration
 let g:deoplete#enable_at_startup = 1
@@ -210,6 +221,24 @@ let g:deoplete#sources#rust#rust_source_path = $HOME.'/.rustup/toolchains/stable
 
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
+"
+" ALE config
+
+let g:ale_linters = {
+\   'ruby': ['rubocop'],
+\}
+
+let g:ale_fixers = {
+\   'ruby': ['rubocop'],
+\}
+
+let g:ale_ruby_rubocop_executable = 'bundle'
+
+let g:ale_linters_explicit = 1
+let g:ale_sign_column_always = 1
+let g:ale_sign_error = 'E!'
+let g:ale_sign_warning = 'W!'
+let g:ale_fix_on_save = 1
 
 " Which key
 

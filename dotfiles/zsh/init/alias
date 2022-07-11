@@ -36,14 +36,14 @@ alias cat='bat'
 alias dig='drill' # I know but habits are hard to get rid off
 
 # Process
-function grepkill() {
- ps aux | grep $1 | tr -s ' ' | cut -d' ' -f2 | xargs kill -9
+function grepkill {
+  ps aux | grep $1 | tr -s ' ' | cut -d' ' -f2 | xargs kill -9
 }
 
 # Grc
 alias gt='grc -s -e go test'
 alias mt='grc -s -e make test -B'
-alias dgt='grc -s -e docker-compose exec test go test'
+# alias dgt='grc -s -e docker-compose exec test go test'
 alias mdt='grc -s -e make docker-test -B'
 alias dmt='grc -s -e docker-compose run test make test -B'
 
@@ -80,3 +80,5 @@ alias link3='link-client --host 172.17.0.1:1315 -u link -p password'
 ## Dive
 
 alias dive='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive:latest'
+
+alias dgt="sc-gotest"

@@ -2,12 +2,6 @@
 
 alias vpn="$SCALINGO_HOME/tools-and-hacks/strongswan/strongswan.sh"
 
-alias scavpn="cd $HOME/Documents/vpn && sudo openvpn $HOME/Documents/vpn/john@scalingo.ovpn"
-alias agoravpn="cd $HOME/Documents/vpn && sudo openvpn $HOME/Documents/vpn/john@agora.ovpn"
-
-# API aliases
-alias dterraform="SCALINGO_AUTH_URL=http://172.17.0.1:1234 SCALINGO_API_URL=http://172.17.0.1:3001 SCALINGO_API_TOKEN=tk-us-jQq68tottYL6fibcY7c2Ev4UvTNIo_Haqn2RFYTy3VSCKxYb terraform"
-
 # Appsdeck repo and builder configuration
 export BUILDPACKS_PATH=/home/john/Documents/Scalingo/appsdeck-builder/buildpacks
 export BASE_REPO_PATH=/home/john/Documents/Scalingo/appsdeck-builder/docker
