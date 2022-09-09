@@ -29,6 +29,11 @@ grc .grc
 
 urxvt/Xdefaults .Xdefaults
 
+# Rofi
+
+rofi/scripts/projects.sh .config/rofi/scripts/projects.sh
+rofi/config.rasi .config/rofi/config.rasi
+
 # i3
 i3/config .config/i3/config
 i3/lock.sh .config/i3/.lock.sh

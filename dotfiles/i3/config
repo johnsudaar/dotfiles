@@ -176,7 +176,7 @@ bar {
 
 # rofi
 
-bindsym $mod+d exec "rofi -combi-modi window,drun -show combi -modi combi"
+bindsym $mod+d exec "rofi -combi-modi window,drun,projects -show combi"
 
 # i3lock
 bindsym $mod+b exec "xidlehook-client --socket /tmp/autolocker.sock control --action Trigger --timer 1"

@@ -55,8 +55,6 @@ Plug 'vim-airline/vim-airline'
 Plug 'equalsraf/neovim-gui-shim'
 
 Plug 'liuchengxu/vim-which-key'
-
-Plug 'KSP-KOS/EditorTools', {'rtp': 'VIM/vim-kerboscript'}
 call plug#end()
 
 autocmd StdinReadPre * let s:std_in=1
