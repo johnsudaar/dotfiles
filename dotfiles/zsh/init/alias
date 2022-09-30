@@ -8,7 +8,7 @@ alias git="hub"
 alias vi="nvim"
 alias dnuke='docker rm -f $(docker ps -aq); docker network rm $(docker network ls -q)'
 alias master="git checkout master"
-alias co='docker-compose'
+alias co='docker compose'
 alias dc='docker'
 alias dcr='docker run -it'
 alias :q='exit'
@@ -43,9 +43,9 @@ function grepkill {
 # Grc
 alias gt='grc -s -e go test'
 alias mt='grc -s -e make test -B'
-# alias dgt='grc -s -e docker-compose exec test go test'
+# alias dgt='grc -s -e docker compose exec test go test'
 alias mdt='grc -s -e make docker-test -B'
-alias dmt='grc -s -e docker-compose run test make test -B'
+alias dmt='grc -s -e docker compose run test make test -B'
 
 # Docker command replacement
 ## Etcd

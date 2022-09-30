@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 
-PROJECTS_PATHS=($HOME/go/src/github.com/Scalingo $HOME/Documents/Scalingo $GOPATH/src/github.com/johnsudaar $HOME/Documents/perso)
+PROJECTS_PATHS=($HOME/gocode/src/github.com/Scalingo $HOME/Documents/Scalingo $GOPATH/src/github.com/johnsudaar $HOME/Documents/perso)
 
 for project_path in $PROJECTS_PATHS ; do
   for project in $(ls $project_path); do
