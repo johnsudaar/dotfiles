@@ -5,8 +5,9 @@ alias vpn="$SCALINGO_HOME/tools-and-hacks/strongswan/strongswan.sh"
 # Appsdeck repo and builder configuration
 export BUILDPACKS_PATH=/home/john/Documents/Scalingo/appsdeck-builder/buildpacks
 export BASE_REPO_PATH=/home/john/Documents/Scalingo/appsdeck-builder/docker
+export DOCKER_ROOT_DISK_PATH=/dev/mapper/vgubuntu-root
 
 # GOGO Configuration
 export SCALINGO_HOME=/home/john/Documents/Scalingo/
 export SCALINGO_REPOS_JSON=$SCALINGO_HOME/internal-documentation/
-
+export PATH=$PATH:$SCALINGO_HOME/tools-and-hacks/ufs-helpers/bin/

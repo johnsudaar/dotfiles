@@ -36,6 +36,7 @@ rofi/config.rasi .config/rofi/config.rasi
 
 # i3
 i3/config .config/i3/config
+i3/config .config/sway/config
 i3/lock.sh .config/i3/.lock.sh
 i3/autolock.sh .config/i3/.autolock.sh
 i3/i3blocks.conf .i3blocks.conf
@@ -51,3 +52,7 @@ ssh/config .ssh/config
 screenlayouts/scalingo.sh .screenlayouts/scalingo.sh
 screenlayouts/laptop.sh .screenlayouts/laptop.sh
 screenlayouts/ufr.sh .screenlayouts/ufr.sh
+
+# Desktop
+
+desktop/firefox-perso.desktop .local/share/applications/firefox-perso.desktop

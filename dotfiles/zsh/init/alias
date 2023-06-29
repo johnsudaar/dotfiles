@@ -8,6 +8,7 @@ alias git="hub"
 alias vi="nvim"
 alias dnuke='docker rm -f $(docker ps -aq); docker network rm $(docker network ls -q)'
 alias master="git checkout master"
+alias main="git checkout main"
 alias co='docker compose'
 alias dc='docker'
 alias dcr='docker run -it'
@@ -82,3 +83,7 @@ alias link3='link-client --host 172.17.0.1:1315 -u link -p password'
 alias dive='docker run --rm -it -v /var/run/docker.sock:/var/run/docker.sock wagoodman/dive:latest'
 
 alias dgt="sc-gotest"
+alias ans="source $HOME/.local/venv/ansible/bin/activate"
+
+
+alias firefox-perso="firefox --profile=Perso"

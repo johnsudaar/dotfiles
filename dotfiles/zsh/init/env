@@ -10,6 +10,7 @@ export PATH=$PATH:$HOME/Documents/cli-tools/robomongo/bin
 
 export PATH="$HOME/.rbenv/bin:$PATH"
 export PATH="$HOME/.ndenv/bin:$PATH"
+export PATH="$HOME/.tfenv/bin:$PATH"
 
 export PATH="$HOME/.local/bin/:$PATH"
 
