@@ -1,5 +1,5 @@
 #!/bin/bash
-version=1.20
+version=1.23.0
 
 /usr/local/go/bin/go version | grep $version > /dev/null
 
@@ -15,7 +15,7 @@ if [ -d /usr/local/go ]; then
 fi
 
 log "Downloading go ${version}..."
-curl -s -O https://storage.googleapis.com/golang/go$version.linux-amd64.tar.gz
+curl -s -L -O https://go.dev/dl/go$version.linux-amd64.tar.gz
 failFast $? "Fail to download go."
 
 log "Installing go $version..."

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-version=2.7.1
+version=3.3.4
 
 if [ -d $HOME/.rbenv ] ; then
   log "Rbenv already installed. Skipping..."

@@ -7,15 +7,11 @@ gitg,gitg
 hub,hub
 
 # Text editor
-,atom
-sublime-text,sublime-text
 neovim,neovim
-,python-neovim
 
 # Terminal utils
 zsh,zsh
 tmux,tmux
-,rxvt-unicode
 
 # Misc
 firefox,firefox
@@ -25,18 +21,13 @@ thunderbird,thunderbird
 jq,jq
 ack,ack
 xclip,xclip
-,jdk8-openjdk
 bat,bat
 ,diff-so-fancy
 
 # Docker and VMS
 docker-ce,docker
 
-# Networking
-openvpn,openvpn
-
 # Utilities
-guake,guake
 htop,htop
 grc,grc
 httpie,httpie
@@ -52,25 +43,32 @@ dnsmasq,dnsmasq
 ,pcsclite
 
 # i3
-i3-gaps,i3-gaps
-i3blocks,i3blocks
-playerctl,playerctl
-rofi,rofi
-,i3lock
-scrot,scrot
-acpi,acpi
-,lm_sensors
-feh,feh
-fzf,fzf
-,perl-json-xs
-,perl-anyevent-i3
-,network-manager-applet
-xautolock,
+# i3-gaps,i3-gaps
+# i3blocks,i3blocks
+# playerctl,playerctl
+# rofi,rofi
+# ,i3lock
+# scrot,scrot
+# acpi,acpi
+# ,lm_sensors
+# feh,feh
+# fzf,fzf
+# ,perl-json-xs
+# ,perl-anyevent-i3
+# ,network-manager-applet
+# xautolock,
+
+# Sway
+mako-notifier,
+fzf,
 
 # Others
-chromium-browser,chromium
-spotify-client,spotify
+# chromium-browser,chromium
 flameshot,
+shellcheck,
+bind9-dnsutils,
 
 # Audio
 , pavucontrol
+playerctl,
+pamixer,

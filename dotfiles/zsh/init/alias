@@ -4,7 +4,6 @@ if ! command -v bat &> /dev/null ; then
   alias bat="batcat"
 fi
 
-alias git="hub"
 alias vi="nvim"
 alias dnuke='docker rm -f $(docker ps -aq); docker network rm $(docker network ls -q)'
 alias master="git checkout master"
@@ -34,7 +33,6 @@ alias ddo='$DOTFILES_HOME/dotfiles/installer.sh $HOME'
 
 # Better tools
 alias cat='bat'
-alias dig='drill' # I know but habits are hard to get rid off
 
 # Process
 function grepkill {
@@ -65,10 +63,10 @@ alias mysql='docker run --rm -it mysql mysql'
 alias influx='docker run --rm -it influxdb:1.2 influx'
 
 ## PgSQL
-alias psql='docker run --rm -it postgres:9.5 psql'
+alias psql='docker run --net host --rm -it postgres:16 psql'
 
 ## Mongo
-alias mongo='docker run --rm -it mongo:3.4 mongo'
+alias mongo='docker run --rm -it mongo:7.0 mongo'
 
 ## Redis
 alias redis-cli='docker run --rm -it redis redis-cli'
