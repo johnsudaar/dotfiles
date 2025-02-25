@@ -61,6 +61,9 @@ dnsmasq,dnsmasq
 # Sway
 mako-notifier,
 fzf,
+swaylock,
+swayidle,
+brightnessctl,
 
 # Others
 # chromium-browser,chromium

@@ -1,10 +1,23 @@
 # vim: filetype=zsh
 # Project aliases
+
+DESKTOP_ENTRY_PATH=$HOME/.local/share/applications
+
+rm -f "${DESKTOP_ENTRY_PATH}/john-project-*.desktop"
+
 PROJECTS_PATHS=($GOPATH/src/github.com/Scalingo $HOME/Documents/Scalingo $GOPATH/src/github.com/johnsudaar $HOME/Documents/perso)
 
 for project_path in $PROJECTS_PATHS ; do
   for project in $(ls $project_path); do
     alias $project="tmux rename-window $project ; $project_path/$project"
+
+    echo "#!/usr/bin/env xdg-open
+[Desktop Entry]
+Version=1.0
+Terminal=false
+Type=Application
+Name=$project
+Exec=code --force-device-scale-factor=1 $project_path/$project" > "${DESKTOP_ENTRY_PATH}/john-project-${project}.desktop"
   done
 done
 

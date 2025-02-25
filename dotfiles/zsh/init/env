@@ -23,8 +23,9 @@ export DOTFILES_HOME="$HOME/Documents/perso/dotfiles/"
 
 export DOCKER_VOLUMES_PATH=/var/lib/docker/volumes
 
-alias preview="fzf --preview 'bat --color \"always\" {}'"
+alias preview="fzf --preview 'batcat --color \"always\" {}'"
 export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(nvim {})+abort'"
 
 export EDITOR=$(which nvim)
-export GH_PAGER=cat
+export GH_PAGER=batcat
+export BAT_THEME="Solarized (dark)"

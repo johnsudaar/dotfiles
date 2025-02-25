@@ -4,6 +4,7 @@
   signingkey = A4928A0EB63DB8F5F0BCC4F73691CC5B9FA45D49
 [push]
   default = simple
+  autoSetupRemote = true
 [commit]
   gpgsign = true
   verbose = true
@@ -28,16 +29,23 @@
   whitespace = red reverse
 [diff]
   noprefix = true
+  algorithm = histogram
+  colorMoved = plain
+  renames = true
+  mnemonicPrefix = true
 [url "ssh://git@github.com:22/"]
   insteadOf = https://github.com/
 [url "git@github.com:"]
   insteadOf = https://github.com/
 [branch]
-  sort = -commiterdate
+  sort = -committerdate
 [tag]
   sort = version:refname
 [init]
   defaultBranch = main
-
 [help]
   autocorrect = prompt
+[rerere]
+  enabled = true
+[column]
+  ui = auto
