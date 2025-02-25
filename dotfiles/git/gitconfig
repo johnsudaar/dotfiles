@@ -1,18 +1,16 @@
 [user]
-	email = john@scalingo.com
-	name = Jonathan Hurter
-	signingkey = A4928A0EB63DB8F5F0BCC4F73691CC5B9FA45D49
+  email = john@scalingo.com
+  name = Jonathan Hurter
+  signingkey = A4928A0EB63DB8F5F0BCC4F73691CC5B9FA45D49
 [push]
-	default = simple
+  default = simple
 [commit]
-	gpgsign = true
+  gpgsign = true
 [pager]
   diff = diff-so-fancy | less --tabs=1,5 -RFX
   show = diff-so-fancy | less --tabs=1,5 -RFX
-
 [alias]
   l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
-
 [color]
   ui = true
 [color "diff-highlight"]
@@ -32,4 +30,15 @@
 [url "ssh://git@github.com:22/"]
   insteadOf = https://github.com/
 [url "git@github.com:"]
-	insteadOf = https://github.com/
+  insteadOf = https://github.com/
+[branch]
+  sort = -commiterdate
+[tag]
+  sort = version:refname
+[init]
+  defaultBranch = main
+
+[help]
+  autocorrect = prompt
+[commit]
+  verbose = true
