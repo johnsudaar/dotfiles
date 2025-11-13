@@ -64,6 +64,7 @@ fzf,
 swaylock,
 swayidle,
 brightnessctl,
+waybar,
 
 # Others
 # chromium-browser,chromium

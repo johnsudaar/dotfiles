@@ -26,7 +26,7 @@ include /etc/sway/config-vars.d/*
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
+output * bg /home/john/bg.jpg fill
 #
 # Example configuration:
 #
@@ -39,9 +39,9 @@ output * bg /usr/share/backgrounds/sway/Sway_Wallpaper_Blue_1920x1080.png fill
 # Example configuration:
 #
 exec swayidle -w \
-    timeout 300 'swaylock -f -c 000000' \
+    timeout 300 'swaylock -f -i /home/john/bg.jpg' \
     timeout 600 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
-    before-sleep 'swaylock -f -c 000000'
+    before-sleep 'swaylock -f -c /home/john/bg.jpg'
 #
 # This will lock your screen after 300 seconds of inactivity, then turn off
 # your displays after another 300 seconds, and turn your screens back on when
@@ -102,7 +102,7 @@ input * {
     bindsym $mod+Shift+e exec swaynag -t warning -m 'You pressed the exit shortcut. Do you really want to exit sway? This will end your Wayland session.' -B 'Yes, exit sway' 'swaymsg exit'
 
     # Lock
-    bindsym $mod+Shift+b exec swaylock
+    bindsym $mod+Shift+b exec swaylock -i '/home/john/bg.jpg'
 #
 # Moving around:
 #
@@ -232,17 +232,20 @@ bindsym --locked XF86MonBrightnessDown exec brightnessctl s 5%-
 #
 # Read `man 5 sway-bar` for more information about this section.
 bar {
-    position bottom
+    swaybar_command waybar
+    # position bottom
 
-    # When the status_command prints a new line to stdout, swaybar updates.
-    # The default just shows the current date and time.
-    status_command while ~/.config/sway/bar.sh; do sleep 1; done
+    # # When the status_command prints a new line to stdout, swaybar updates.
+    # # The default just shows the current date and time.
+    # status_command while ~/.config/sway/bar.sh; do sleep 1; done
 
-    colors {
-        statusline #ffffff
-        background #323232
-        inactive_workspace #32323200 #32323200 #5c5c5c
-    }
+    # colors {
+    #     statusline #ffffff
+    #     background #323232
+    #     inactive_workspace #32323200 #32323200 #5c5c5c
+    # }
 }
+
+for_window [app_id="firefox"] inhibit_idle fullscreen
 
 include /etc/sway/config.d/*

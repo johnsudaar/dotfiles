@@ -43,6 +43,8 @@ i3/autolock.sh .config/i3/.autolock.sh
 i3/i3blocks.conf .i3blocks.conf
 i3/bg.sh .config/i3/.bg.sh
 i3/Xresources .Xresources
+waybar/config .config/waybar/config
+waybar/style.css .config/waybar/style.css
 
 # ssh
 
@@ -57,3 +59,6 @@ screenlayouts/ufr.sh .screenlayouts/ufr.sh
 # Desktop
 
 desktop/firefox-perso.desktop .local/share/applications/firefox-perso.desktop
+
+# Shims
+shims/helmfile.sh .local/bin/helmfile
