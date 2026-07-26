@@ -62,8 +62,8 @@
 #waybar {
 	background: rgba(40, 40, 40, 0.8784313725); /* #282828e0 */
 	color: @white;
-	font-family: "Hack Nerd Font", Siji;
-	font-size: 10pt;
+	font-family: "Ubuntu Mono derivative Powerline", "Symbols Nerd Font Mono", "Noto Color Emoji", Siji;
+	font-size: 18px;
 	/*font-weight: bold;*/
 }
 
@@ -205,61 +205,66 @@
 }
 
 #custom-arrow1 {
-	font-size: 11pt;
 	color: @time;
 	background: @date;
 }
 
 #custom-arrow2 {
-	font-size: 11pt;
 	color: @date;
 	background: @layout;
 }
 
 #custom-arrow3 {
-	font-size: 11pt;
 	color: @layout;
 	background: @battery;
 }
 
 #custom-arrow4 {
-	font-size: 11pt;
 	color: @battery;
 	background: @temp;
 }
 
 #custom-arrow5 {
-	font-size: 11pt;
 	color: @temp;
 	background: @cpu;
 }
 
 #custom-arrow6 {
-	font-size: 11pt;
 	color: @cpu;
 	background: @memory;
 }
 
 #custom-arrow7 {
-	font-size: 11pt;
 	color: @memory;
 	background: @network;
 }
 
 #custom-arrow8 {
-	font-size: 11pt;
 	color: @network;
 	background: @sound;
 }
 
 #custom-arrow9 {
-	font-size: 11pt;
 	color: @sound;
 	background: transparent;
 }
 
 #custom-arrow10 {
-	font-size: 11pt;
 	color: @unfocused;
 	background: transparent;
+}
+
+/* Keep Powerline separators in the primary patched font. */
+#custom-arrow1,
+#custom-arrow2,
+#custom-arrow3,
+#custom-arrow4,
+#custom-arrow5,
+#custom-arrow6,
+#custom-arrow7,
+#custom-arrow8,
+#custom-arrow9,
+#custom-arrow10 {
+	font-family: "Ubuntu Mono derivative Powerline";
+	font-size: 20px;
 }

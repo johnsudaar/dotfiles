@@ -6,6 +6,9 @@
 
 ### Variables
 #
+# Match the terminal font used by URxvt.
+font pango:Ubuntu Mono derivative Powerline 9
+
 # Logo key. Use Mod1 for Alt.
 set $mod Mod4
 # Home row direction keys, like vim
@@ -15,7 +18,7 @@ set $up k
 set $right l
 # Your preferred terminal emulator
 # set $term foot
-set $term gnome-terminal --hide-menubar
+set $term ptyxis -s
 # Your preferred application launcher
 # Note: pass the final command to swaymsg so that the resulting window can be opened
 # on the original workspace that the command was run on.
@@ -27,6 +30,10 @@ include /etc/sway/config-vars.d/*
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 output * bg /home/john/bg.jpg fill
+
+# Laptop display on the left, external display on the right, bottom-aligned.
+output eDP-1 mode 2880x1800@120Hz position 0 300 scale 1.2 transform normal
+output HDMI-A-1 mode 3840x2160@60Hz position 2400 0 scale 1.2 transform normal
 #
 # Example configuration:
 #

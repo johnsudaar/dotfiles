@@ -1,12 +1,12 @@
 [user]
-  email = john@scalingo.com
-  name = Jonathan Hurter
-  signingkey = A4928A0EB63DB8F5F0BCC4F73691CC5B9FA45D49
+  email = 3317829+johnsudaar@users.noreply.github.com
+  name = Johnsudaar
+  signingkey = 69336A8BB8B5CBF4428DE88F4AEA4BE2A13C3BB7
 [push]
   default = simple
   autoSetupRemote = true
 [commit]
-  gpgsign = true
+  #gpgsign = true
   verbose = true
 [pager]
   diff = diff-so-fancy | less --tabs=1,5 -RFX

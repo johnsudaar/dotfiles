@@ -52,7 +52,6 @@ ssh/config .ssh/config
 
 # Screen layouts
 
-screenlayouts/scalingo.sh .screenlayouts/scalingo.sh
 screenlayouts/laptop.sh .screenlayouts/laptop.sh
 screenlayouts/ufr.sh .screenlayouts/ufr.sh
 

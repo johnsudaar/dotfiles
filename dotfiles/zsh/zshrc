@@ -89,7 +89,6 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.zsh/init/env
 source ~/.zsh/init/alias
-source ~/.zsh/init/scalingo
 
 export fpath=(~/.zsh/completions $fpath)
 
@@ -101,5 +100,4 @@ source ~/.zsh/init/projects
 source ~/.zsh/fzf/completion.zsh
 source ~/.zsh/fzf/key-bindings.zsh
 
-source $SCALINGO_HOME/tools-and-hacks/zsh/scalingo
 if [ -e /home/john/.nix-profile/etc/profile.d/nix.sh ]; then . /home/john/.nix-profile/etc/profile.d/nix.sh; fi

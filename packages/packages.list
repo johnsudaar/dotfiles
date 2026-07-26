@@ -65,6 +65,11 @@ swaylock,
 swayidle,
 brightnessctl,
 waybar,
+sway,
+rofi,
+ptyxis,
+fuzzel,
+wdisplays,
 
 # Others
 # chromium-browser,chromium
@@ -76,3 +81,6 @@ bind9-dnsutils,
 , pavucontrol
 playerctl,
 pamixer,
+
+# For rbenv
+libyaml-dev

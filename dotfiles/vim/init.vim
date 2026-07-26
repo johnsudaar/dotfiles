@@ -91,7 +91,7 @@ let g:go_highlight_methods = 1
 let g:go_fmt_command = "goimports"
 let g:go_fmt_options = {
   \ 'gofmt': '-s',
-  \ 'goimports': '-local github.com/Scalingo',
+  \ 'goimports': '-local github.com/johnsudaar',
   \ }
 let g:go_metalinter_enabled = ['vet', 'golint', 'errcheck']
 let g:go_decls_includes = "func,type" " GoDecls gives functions and types names

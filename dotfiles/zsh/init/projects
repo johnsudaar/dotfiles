@@ -5,7 +5,7 @@ DESKTOP_ENTRY_PATH=$HOME/.local/share/applications
 
 rm -f "${DESKTOP_ENTRY_PATH}/john-project-*.desktop"
 
-PROJECTS_PATHS=($GOPATH/src/github.com/Scalingo $HOME/Documents/Scalingo $GOPATH/src/github.com/johnsudaar $HOME/Documents/perso)
+PROJECTS_PATHS=($GOPATH/src/github.com/johnsudaar $HOME/Documents/perso)
 
 for project_path in $PROJECTS_PATHS ; do
   for project in $(ls $project_path); do

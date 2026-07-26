@@ -51,13 +51,6 @@ echo "-------> Creating base path"
 
 mkdir -p $HOME/Documents/perso/
 
-echo "-------> Checking for ssh key"
-
-if [ ! -f $HOME/.ssh/id_rsa ] ; then
-  echo "         Unable to find ssh key"
-  exit 1
-fi
-
 echo "-------> Cloning repo"
 
 cd $HOME/Documents/perso

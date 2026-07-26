@@ -1,6 +1,7 @@
 {
 	"layer": "top",
 	"position": "bottom",
+	"height": 20,
 
 	"modules-left": [
 		"sway/mode",
@@ -143,6 +144,8 @@
 	},
 
 	"temperature": {
+		"hwmon-path-abs": "/sys/devices/platform/coretemp.0/hwmon",
+		"input-filename": "temp1_input",
 		"critical-threshold": 90,
 		"interval": 5,
 		"format": "{icon} {temperatureC}°",
